@@ -60,8 +60,8 @@ public class SpriteScript : MonoBehaviour
 
     public void Fase1()
     {
-        Time.timeScale = 1;
         StartCoroutine(Fase());
+        Time.timeScale = 1;
     }
 
     IEnumerator Fase()

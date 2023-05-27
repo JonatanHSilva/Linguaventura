@@ -19,8 +19,8 @@ public class MenuScript : MonoBehaviour
 
     public void Jogar()
     {
-        Time.timeScale = 1;
         StartCoroutine(Jogo());
+        Time.timeScale = 1;
     }
 
     public void AreaProf()
@@ -36,8 +36,8 @@ public class MenuScript : MonoBehaviour
 
     public void VoltarMenu()
     {
-        Time.timeScale = 1;
         StartCoroutine(VoltarAoMenu());
+        Time.timeScale = 1;
     }
 
     IEnumerator Jogo()

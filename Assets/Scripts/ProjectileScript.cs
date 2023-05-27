@@ -31,13 +31,13 @@ public class ProjectileScript : MonoBehaviour
         if (obj.tag == "Player" && this.tag != "MagiaPlayer")
         {
             if (explosion != null) Instantiate(explosion, transform.position, Quaternion.identity);
-            //obj.GetComponent<MovementPlayerScript>().TakeDamage();
+            obj.GetComponent<MovementPlayerScript>().TakeDamage();
             Destroy(this.gameObject);
         }
         if (obj.tag == "Enemy" && this.tag != "MagiaInimigo")
         {
             if (explosion != null) Instantiate(explosion, transform.position, Quaternion.identity);
-            //obj.GetComponent<MovementEnemyScript>().TakeDamage();
+            obj.GetComponent<MovementEnemyScript>().TakeDamage();
             Destroy(this.gameObject);
         }
 

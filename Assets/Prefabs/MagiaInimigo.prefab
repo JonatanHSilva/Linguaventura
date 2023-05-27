@@ -50,6 +50,7 @@ MonoBehaviour:
   tempo: 5
   explosion: {fileID: 4631619825410847240, guid: 73b5c41fb40108c47857c7750df6e2ed,
     type: 3}
+  dissipate: {fileID: 0}
 --- !u!70 &2104099740587969466
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -65,7 +66,7 @@ CapsuleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.2, y: 0.2}
-  m_Direction: 0
+  m_Direction: 1
 --- !u!50 &4922477410404018881
 Rigidbody2D:
   serializedVersion: 4

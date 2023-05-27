@@ -1,14 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class MovementEnemyScript : MonoBehaviour
 {
     public float speed;
     public Vector2 screenLimit = new(4, 3);
     private Animator animator;
-    int direction = 1;
+    int direction = -1;
     Vector2 posicao;
+    public Image lifeBar;
+    public TextMeshProUGUI lifeText;
+    public int vida = 10;
+    public int vidaMaxima = 10;
+    public int damage = 1;
+    public GameObject proxFase;
+    public SpriteRenderer spriteRenderer;
+    public Sprite[] sprite;
 
     public GameObject projectile;
     public float shootDistance = 1;
@@ -20,6 +30,8 @@ public class MovementEnemyScript : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        vida = vidaMaxima;
+        UpdateUI();
     }
 
 
@@ -29,52 +41,28 @@ public class MovementEnemyScript : MonoBehaviour
         Movement();
         Shoot();
     }
+    void UpdateUI()
+    {
+        lifeBar.fillAmount = (float)vida / vidaMaxima;
+        lifeText.text = vida + "/" + vidaMaxima;
+    }
 
     void Movement()
     {
         transform.Translate(new Vector2(0, direction * speed * Time.deltaTime));
 
-        if (transform.position.y > 2)
+        if (transform.position.y > 3)
         {
             direction *= -1;
-            transform.position = (new Vector2(transform.position.x, Mathf.Sign(transform.position.y) * (screenLimit.y - 1)));
+            ChangeSprite(sprite[0]);
+            transform.position = (new Vector2(transform.position.x, transform.position.y));
         }
-        if (transform.position.y < -3)
+        if (transform.position.y < -2)
         {
             direction *= -1;
-            transform.position = (new Vector2(transform.position.x, Mathf.Sign(transform.position.y) * screenLimit.y));
+            ChangeSprite(sprite[1]);
+            transform.position = (new Vector2(transform.position.x, transform.position.y));
         }
-
-        if (direction == 1)
-        {
-            animator.SetInteger("Direction", 1);
-        }
-        if (direction == -1)
-        {
-            animator.SetInteger("Direction", 0);
-        }
-
-        /*
-         * animator.SetInteger("Direction", 3);
-        else if (Input.GetKey(KeyCode.D))
-        {
-            dir.x = 1;
-            animator.SetInteger("Direction", 2);
-        }
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            dir.y = 1;
-            animator.SetInteger("Direction", 1);
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            dir.y = -1;
-            
-        }
-
-        dir.Normalize()*/
-        animator.SetBool("IsMoving", posicao.magnitude > 0);
 
         GetComponent<Rigidbody2D>().velocity = speed * posicao;
     }
@@ -90,4 +78,39 @@ public class MovementEnemyScript : MonoBehaviour
             shootTimer = 0;
         }
     }
+
+    void ChangeSprite(Sprite updateSprite)
+    {
+        spriteRenderer.sprite = updateSprite;
+    }
+
+    public void TakeDamage()
+    {
+        if (this.damage < 0)
+            return;
+        if (vida - this.damage > 0)
+            vida -= this.damage;
+        else
+        {
+            vida = 0;
+            Morrer();
+        }
+        UpdateUI();
+    }
+
+    void Morrer()
+    {
+        Time.timeScale = 0;
+        proxFase.SetActive(true);
+        
+        /*try
+        {
+            //FindObjectOfType<MovementPlayerScript>().AddScore(scoreBonus);
+        }
+        catch { }*/
+
+        vida = vidaMaxima;
+        transform.position = new Vector2(4, 0);
+    }
+
 }

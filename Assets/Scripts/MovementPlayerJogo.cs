@@ -5,12 +5,13 @@ using UnityEngine;
 public class MovementPlayerJogo : MonoBehaviour
 {
     public float speed;
-
-    private Animator animator;
+    public SpriteRenderer spriteRenderer;
+    public Sprite[] sprite;
+    
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
 
@@ -20,29 +21,35 @@ public class MovementPlayerJogo : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             dir.x = -1;
-            animator.SetInteger("Direction", 3);
+            spriteRenderer.flipX = true;
+            ChangeSprite(sprite[0]);
         }
         else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             dir.x = 1;
-            animator.SetInteger("Direction", 2);
+            spriteRenderer.flipX = false;
+            ChangeSprite(sprite[1]);
         }
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             dir.y = 1;
-            animator.SetInteger("Direction", 1);
+            ChangeSprite(sprite[2]);
         }
         else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             dir.y = -1;
-            animator.SetInteger("Direction", 0);
+            ChangeSprite(sprite[3]);
         }
 
         dir.Normalize();
-        animator.SetBool("IsMoving", dir.magnitude > 0);
 
         GetComponent<Rigidbody2D>().velocity = speed * dir;
+    }
+
+    void ChangeSprite(Sprite updateSprite)
+    {
+        spriteRenderer.sprite = updateSprite;
     }
 }
 
