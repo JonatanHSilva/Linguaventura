@@ -1043,8 +1043,8 @@ MonoBehaviour:
   lifeBar: {fileID: 1347603467}
   lifeText: {fileID: 1702308128}
   vida: 10
-  vidaMaxima: 100
-  damage: 10
+  vidaMaxima: 10
+  damage: 1
   perdeu: {fileID: 197872095}
   menu: {fileID: 950920555}
   projectile: {fileID: 3323178654941843580, guid: 6d34db1f5fc8dca4d83357288660c2be,
@@ -1712,6 +1712,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 405116079}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &987144137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2097,6 +2109,180 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179255908}
   m_CullTransparentMesh: 1
+--- !u!1001 &1183604854
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861174, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: quiz
+      value: 
+      objectReference: {fileID: 1721031592}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: fileName
+      value: Verbos e seus componentes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[0].pergunta
+      value: 2+2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[1].pergunta
+      value: 3*3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[0].qtdRespostas
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[1].qtdRespostas
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[0].respostaCerta
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[1].respostaCerta
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[0].respostaErradaA
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[0].respostaErradaB
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[0].respostaErradaC
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[1].respostaErradaA
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[1].respostaErradaB
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[1].respostaErradaC
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_Name
+      value: Quis
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788984432277177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788984432277177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788984432277181, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95f2c26133f8a6f4a86c17f834dd4990, type: 3}
 --- !u!1 &1347603465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,7 +2597,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300006, guid: ec47f75fe8aff1644ac73998f4ad31b5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3679245, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2526,9 +2712,9 @@ SpriteRenderer:
   m_SortingLayerID: -1869315837
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
-  m_Color: {r: 0.31132078, g: 0.29193667, b: 0.29193667, a: 1}
-  m_FlipX: 0
+  m_Sprite: {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
+  m_Color: {r: 0.4433962, g: 0.047685977, b: 0.047685977, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.65625, y: 1.4}
@@ -2554,8 +2740,8 @@ MonoBehaviour:
   lifeBar: {fileID: 858805266}
   lifeText: {fileID: 1966941898}
   vida: 10
-  vidaMaxima: 200
-  damage: 5
+  vidaMaxima: 10
+  damage: 2
   proxFase: {fileID: 1035958537}
   spriteRenderer: {fileID: 1551404158}
   sprite:
@@ -2563,6 +2749,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
   projectile: {fileID: 3323178654941843580, guid: e28a396aa1decaf4982634442858785a,
     type: 3}
+  quiz: {fileID: 1721031592}
   shootDistance: 1
   shootSpeed: 200
   shootCD: 1.5
@@ -4182,7 +4369,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1611889023
 GameObject:
@@ -4547,6 +4734,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702308126}
   m_CullTransparentMesh: 1
+--- !u!1 &1721031592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7335788984432277181, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+    type: 3}
+  m_PrefabInstance: {fileID: 1183604854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1769841744
 GameObject:
   m_ObjectHideFlags: 0

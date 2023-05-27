@@ -56,6 +56,9 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Layout\ContentSizeFitter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Button.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Layout\CanvasScaler.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\EventSystem\UIElements\PanelRaycaster.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Image.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Toggle.cs" />
@@ -82,7 +85,6 @@
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Culling\RectangularVertexClipper.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\EventSystem\EventInterfaces.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Graphic.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Layout\CanvasScaler.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\MaterialModifiers\IMaterialModifier.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\SetPropertyUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Layout\AspectRatioFitter.cs" />
@@ -97,10 +99,8 @@
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\FontUpdateTracker.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\EventSystem\RaycastResult.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\ToggleGroup.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Button.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\ColorBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Navigation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Layout\ContentSizeFitter.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\VertexModifiers\Outline.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Culling\ClipperRegistry.cs" />
     <Compile Include="Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Layout\VerticalLayoutGroup.cs" />

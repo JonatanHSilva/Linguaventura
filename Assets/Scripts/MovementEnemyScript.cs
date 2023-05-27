@@ -8,7 +8,6 @@ public class MovementEnemyScript : MonoBehaviour
 {
     public float speed;
     public Vector2 screenLimit = new(4, 3);
-    private Animator animator;
     int direction = -1;
     Vector2 posicao;
     public Image lifeBar;
@@ -19,8 +18,9 @@ public class MovementEnemyScript : MonoBehaviour
     public GameObject proxFase;
     public SpriteRenderer spriteRenderer;
     public Sprite[] sprite;
+    int vez = 0; 
 
-    public GameObject projectile;
+    public GameObject projectile, quiz;
     public float shootDistance = 1;
     public float shootSpeed = 300;
     public float shootCD = .8f;
@@ -29,7 +29,6 @@ public class MovementEnemyScript : MonoBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
         vida = vidaMaxima;
         UpdateUI();
     }
@@ -40,6 +39,33 @@ public class MovementEnemyScript : MonoBehaviour
         shootTimer += Time.deltaTime;
         Movement();
         Shoot();
+
+        if ((float)vida == (float)vidaMaxima * 0.2)
+        {
+            //Debug.Log("Entrou");
+            Time.timeScale = 0;
+            quiz.SetActive(true);
+        }
+        else if((float)vida == (float)vidaMaxima * 0.4)
+        {
+            Time.timeScale = 0;
+            quiz.SetActive(true);
+        }
+        else if((float)vida == (float)vidaMaxima * 0.6)
+        {
+            Time.timeScale = 0;
+            quiz.SetActive(true);
+        }
+        else if((float)vida == (float)vidaMaxima * 0.8)
+        {
+            Time.timeScale = 0;
+            quiz.SetActive(true);
+        }
+        else if(vida == 1)
+        {
+            Time.timeScale = 0;
+            quiz.SetActive(true);
+        }
     }
     void UpdateUI()
     {
@@ -51,6 +77,11 @@ public class MovementEnemyScript : MonoBehaviour
     {
         transform.Translate(new Vector2(0, direction * speed * Time.deltaTime));
 
+        if(direction == -1 && vez == 0)
+        {
+            ChangeSprite(sprite[0]);
+            vez++;
+        }
         if (transform.position.y > 3)
         {
             direction *= -1;
@@ -113,4 +144,5 @@ public class MovementEnemyScript : MonoBehaviour
         transform.position = new Vector2(4, 0);
     }
 
+    
 }

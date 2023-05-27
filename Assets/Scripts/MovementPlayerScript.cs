@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MovementPlayerScript : MonoBehaviour
 {
@@ -67,7 +68,7 @@ public class MovementPlayerScript : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            dir.x = 1;
+            if (transform.position.x < screenLimit.x) dir.x = 1;
             spriteRenderer.flipX = false;
             ChangeSprite(sprite[1]);
         }

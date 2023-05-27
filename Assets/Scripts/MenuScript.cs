@@ -20,7 +20,7 @@ public class MenuScript : MonoBehaviour
     public void Jogar()
     {
         StartCoroutine(Jogo());
-        Time.timeScale = 1;
+        Time.timeScale = 1; 
     }
 
     public void AreaProf()
