@@ -12,13 +12,13 @@ public class MovementEnemyScript : MonoBehaviour
     Vector2 posicao;
     public Image lifeBar;
     public TextMeshProUGUI lifeText;
-    public int vida = 10;
+    public int vida = 10, vidaAntiga;
     public int vidaMaxima = 10;
     public int damage = 1;
     public GameObject proxFase;
     public SpriteRenderer spriteRenderer;
     public Sprite[] sprite;
-    int vez = 0; 
+    int vez = 0, ativaQuiz = 0;
 
     public GameObject projectile, quiz;
     public float shootDistance = 1;
@@ -39,33 +39,7 @@ public class MovementEnemyScript : MonoBehaviour
         shootTimer += Time.deltaTime;
         Movement();
         Shoot();
-
-        if ((float)vida == (float)vidaMaxima * 0.2)
-        {
-            //Debug.Log("Entrou");
-            Time.timeScale = 0;
-            quiz.SetActive(true);
-        }
-        else if((float)vida == (float)vidaMaxima * 0.4)
-        {
-            Time.timeScale = 0;
-            quiz.SetActive(true);
-        }
-        else if((float)vida == (float)vidaMaxima * 0.6)
-        {
-            Time.timeScale = 0;
-            quiz.SetActive(true);
-        }
-        else if((float)vida == (float)vidaMaxima * 0.8)
-        {
-            Time.timeScale = 0;
-            quiz.SetActive(true);
-        }
-        else if(vida == 1)
-        {
-            Time.timeScale = 0;
-            quiz.SetActive(true);
-        }
+        Quiz();
     }
     void UpdateUI()
     {
@@ -144,5 +118,47 @@ public class MovementEnemyScript : MonoBehaviour
         transform.position = new Vector2(4, 0);
     }
 
-    
+    void Quiz()
+    {
+        if ((float)vida == (float)vidaMaxima * 0.2 && ativaQuiz == 0)
+        {
+            //Debug.Log("Entrou");
+            Time.timeScale = 0;
+            quiz.SetActive(true);
+            ativaQuiz = 1;
+            vidaAntiga = vida;
+        }
+        else if ((float)vida == (float)vidaMaxima * 0.4 && ativaQuiz == 0)
+        {
+            Time.timeScale = 0;
+            quiz.SetActive(true);
+            ativaQuiz = 1;
+            vidaAntiga = vida;
+        }
+        else if ((float)vida == (float)vidaMaxima * 0.6 && ativaQuiz == 0)
+        {
+            Time.timeScale = 0;
+            quiz.SetActive(true);
+            ativaQuiz = 1;
+            vidaAntiga = vida;
+        }
+        else if ((float)vida == (float)vidaMaxima * 0.8 && ativaQuiz == 0)
+        {
+            Time.timeScale = 0;
+            quiz.SetActive(true);
+            ativaQuiz = 1;
+            vidaAntiga = vida;
+        }
+        else if (vida == 1 && ativaQuiz == 0)
+        {
+            Time.timeScale = 0;
+            quiz.SetActive(true);
+            ativaQuiz = 1;
+        }
+
+        if(vidaAntiga != vida)
+        {
+            ativaQuiz = 0;
+        }
+    }
 }

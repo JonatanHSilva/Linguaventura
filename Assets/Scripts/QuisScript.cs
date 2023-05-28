@@ -179,12 +179,12 @@ public class QuisScript : MonoBehaviour
     }
     void SelecionarPergunta()
     {
-        /*if (perguntas.Count == 0 || perguntas == null)
+        if (perguntas.Count == 0 || perguntas == null)
         {
             SalvarRespostas();
             SceneManager.LoadScene(ProximoLevel);
             return;
-        }*/
+        }
         
         perguntaAtual = perguntas[Random.Range(0, perguntas.Count)];
         perguntasSelecionadas.Add(perguntaAtual);
@@ -227,6 +227,7 @@ public class QuisScript : MonoBehaviour
     public void Certo()
     {
         quiz.SetActive(false);
+        Time.timeScale = 1;
         Debug.Log("certo: " + perguntaAtual.respostaCerta);
         SelecionarPergunta();
         IniciarButtons();

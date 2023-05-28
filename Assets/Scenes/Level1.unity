@@ -395,6 +395,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59527341}
   m_CullTransparentMesh: 1
+--- !u!1 &86079042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7335788983458861177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+    type: 3}
+  m_PrefabInstance: {fileID: 1183604854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &197872095
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,7 +2191,7 @@ PrefabInstance:
         type: 3}
       propertyPath: quiz
       value: 
-      objectReference: {fileID: 1721031592}
+      objectReference: {fileID: 86079042}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: fileName
@@ -2264,7 +2270,7 @@ PrefabInstance:
     - target: {fileID: 7335788983458861177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7335788984432277177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2279,7 +2285,7 @@ PrefabInstance:
     - target: {fileID: 7335788984432277181, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95f2c26133f8a6f4a86c17f834dd4990, type: 3}
@@ -2740,6 +2746,7 @@ MonoBehaviour:
   lifeBar: {fileID: 858805266}
   lifeText: {fileID: 1966941898}
   vida: 10
+  vidaAntiga: 0
   vidaMaxima: 10
   damage: 2
   proxFase: {fileID: 1035958537}
@@ -2749,7 +2756,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
   projectile: {fileID: 3323178654941843580, guid: e28a396aa1decaf4982634442858785a,
     type: 3}
-  quiz: {fileID: 1721031592}
+  quiz: {fileID: 86079042}
   shootDistance: 1
   shootSpeed: 200
   shootCD: 1.5
@@ -4734,12 +4741,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702308126}
   m_CullTransparentMesh: 1
---- !u!1 &1721031592 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7335788984432277181, guid: 95f2c26133f8a6f4a86c17f834dd4990,
-    type: 3}
-  m_PrefabInstance: {fileID: 1183604854}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1769841744
 GameObject:
   m_ObjectHideFlags: 0
