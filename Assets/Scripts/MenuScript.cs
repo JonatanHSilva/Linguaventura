@@ -19,7 +19,8 @@ public class MenuScript : MonoBehaviour
 
     public void Jogar()
     {
-        StartCoroutine(Jogo());
+        SceneManager.LoadScene("Jogo");
+        //StartCoroutine(Jogo());
         Time.timeScale = 1; 
     }
 
@@ -42,7 +43,7 @@ public class MenuScript : MonoBehaviour
 
     IEnumerator Jogo()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSecondsRealtime(.5f);
         SceneManager.LoadScene("Jogo");
     }
 

@@ -56,13 +56,13 @@ public class MovementEnemyScript : MonoBehaviour
             ChangeSprite(sprite[0]);
             vez++;
         }
-        if (transform.position.y > 3)
+        if (transform.position.y > 2.5)
         {
             direction *= -1;
             ChangeSprite(sprite[0]);
             transform.position = (new Vector2(transform.position.x, transform.position.y));
         }
-        if (transform.position.y < -2)
+        if (transform.position.y < -1.8)
         {
             direction *= -1;
             ChangeSprite(sprite[1]);
@@ -113,9 +113,7 @@ public class MovementEnemyScript : MonoBehaviour
             //FindObjectOfType<MovementPlayerScript>().AddScore(scoreBonus);
         }
         catch { }*/
-
-        vida = vidaMaxima;
-        transform.position = new Vector2(4, 0);
+        
     }
 
     void Quiz()
@@ -154,6 +152,7 @@ public class MovementEnemyScript : MonoBehaviour
             Time.timeScale = 0;
             quiz.SetActive(true);
             ativaQuiz = 1;
+            vidaAntiga = vida;
         }
 
         if(vidaAntiga != vida)

@@ -1487,15 +1487,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Use as setas para movimentar o personagem
+  m_Text: '- Use as setas para movimentar o personagem e espaco para selecionar.
 
+    -
+    Movimente o personagem ate o local que sera instruido durante o jogo.
 
-    - Movimente o personagem
-    ate o local que sera instruido durante o jogo
-
-
-    - Siga as dicas dentro do
-    jogo para concluir seus objetivos e finalizar o jogo'
+    -
+    Siga as dicas dentro do jogo para concluir seus objetivos e finalizar o jogo.'
 --- !u!222 &1591926245
 CanvasRenderer:
   m_ObjectHideFlags: 0
