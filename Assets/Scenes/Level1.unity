@@ -1049,8 +1049,8 @@ MonoBehaviour:
   lifeBar: {fileID: 1347603467}
   lifeText: {fileID: 1702308128}
   vida: 10
-  vidaMaxima: 10
-  damage: 1
+  vidaMaxima: 100
+  damage: 5
   perdeu: {fileID: 197872095}
   menu: {fileID: 950920555}
   projectile: {fileID: 3323178654941843580, guid: 6d34db1f5fc8dca4d83357288660c2be,
@@ -1684,7 +1684,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.41568628, g: 0.39607844, b: 0.39607844, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1708,20 +1708,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 950920558}
         m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
-        m_MethodName: Jogar
+        m_MethodName: VoltarMenu
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 405116079}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1782,7 +1770,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1035958543}
   - component: {fileID: 1035958542}
-  - component: {fileID: 1035958541}
   - component: {fileID: 1035958540}
   - component: {fileID: 1035958539}
   - component: {fileID: 1035958538}
@@ -1845,19 +1832,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21ab3ff8583b9240849c8a302ecbceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1035958541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035958537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 192de0a4cf1641043bcf8aecd81283d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
 --- !u!223 &1035958542
 Canvas:
   m_ObjectHideFlags: 0
@@ -2220,17 +2194,39 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].pergunta
-      value: 2+2
+      value: "O Verbo Transitivo Direto \xE9 sempre ligado a um Objeto Direto. \nSelecione
+        a op\xE7\xE3o a seguir que completa corretamente a seguinte frase: \nJos\xE9
+        sentia ____________"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].pergunta
-      value: 3*3
+      value: "O Verbo Transitivo Indireto \xE9 sempre ligado a um Objeto Indireto.
+        \nSelecione a op\xE7\xE3o a seguir que completa corretamente a seguinte frase:
+        \nAmanda precisou ____________"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[2].pergunta
+      value: "O Verbo Bitransitivo pode ser ligado a Objetos Diretos e Indiretos.
+        \nSelecione a seguir a op\xE7\xE3o que complete INCORRETAMENTE a seguinte
+        frase: \nJo\xE3o procurou ___________"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[3].pergunta
+      value: "\"O p\xE1ssaro cantou\". \nA frase pode ser classificada como:"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[4].pergunta
+      value: "Verbos de Liga\xE7\xE3o relacionam o sujeito a Predicativos do Sujeito.\nSelecione
+        a op\xE7\xE3o que contenha um Verbo de Liga\xE7\xE3o:"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2244,43 +2240,118 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
-      propertyPath: perguntas.Array.data[0].respostaCerta
+      propertyPath: perguntas.Array.data[2].qtdRespostas
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
+      propertyPath: perguntas.Array.data[3].qtdRespostas
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[4].qtdRespostas
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[0].respostaCerta
+      value: dores agudas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
       propertyPath: perguntas.Array.data[1].respostaCerta
-      value: 9
+      value: de dinheiro
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[2].respostaCerta
+      value: "N\xE3o possui Objeto"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[3].respostaCerta
+      value: Verbo Intransitivo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[4].respostaCerta
+      value: Pedro era muito cruel
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaA
-      value: 5
+      value: da academia
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaB
-      value: 6
+      value: "ao p\xFAblico"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaC
-      value: 7
+      value: "N\xE3o possui Objeto"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaA
-      value: 6
+      value: sair
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaB
-      value: 15
+      value: correr
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaC
-      value: 12
+      value: "N\xE3o possui Objeto"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[2].respostaErradaA
+      value: "as informa\xE7\xF5es"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[2].respostaErradaB
+      value: a mim
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[2].respostaErradaC
+      value: "as m\xE1scaras"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[3].respostaErradaA
+      value: Verbo Transitivo Direto
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[3].respostaErradaB
+      value: Verbo Bitransitivo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[3].respostaErradaC
+      value: "Verbo de Liga\xE7\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[4].respostaErradaA
+      value: "Jos\xE9 sentia dores agudas"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[4].respostaErradaB
+      value: Amanda precisou de dinhero
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[4].respostaErradaC
+      value: "O p\xE1ssaro cantou"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2841,9 +2912,8 @@ MonoBehaviour:
   lifeBar: {fileID: 858805266}
   lifeText: {fileID: 1966941898}
   vida: 10
-  vidaAntiga: 0
-  vidaMaxima: 10
-  damage: 2
+  vidaMaxima: 150
+  damage: 10
   proxFase: {fileID: 1035958537}
   spriteRenderer: {fileID: 1551404158}
   sprite:
@@ -2854,7 +2924,7 @@ MonoBehaviour:
   quiz: {fileID: 86079042}
   shootDistance: 1
   shootSpeed: 200
-  shootCD: 1.5
+  shootCoolDown: 1
 --- !u!4 &1551404160
 Transform:
   m_ObjectHideFlags: 0
@@ -4558,20 +4628,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 950920558}
         m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
-        m_MethodName: Fechar
+        m_MethodName: Jogar
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 950920559}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4613,7 +4671,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fechar
+  m_Text: Sair
 --- !u!222 &1611889027
 CanvasRenderer:
   m_ObjectHideFlags: 0

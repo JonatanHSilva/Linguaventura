@@ -1044,7 +1044,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 956100865}
         m_TargetAssemblyTypeName: SpriteScript, Assembly-CSharp
-        m_MethodName: proxFase
+        m_MethodName: Fase3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29973,7 +29973,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1499946065}
         m_TargetAssemblyTypeName: SpriteScript, Assembly-CSharp
-        m_MethodName: proxFase
+        m_MethodName: Fase2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

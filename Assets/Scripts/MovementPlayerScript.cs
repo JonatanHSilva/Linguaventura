@@ -17,7 +17,8 @@ public class MovementPlayerScript : MonoBehaviour
     public int vidaMaxima = 10;
     public int damage = 1;
     public GameObject perdeu, menu;
-    bool pause = false;
+    bool pause = false, morto = false;
+    //QuisScript quiz;
 
     public GameObject projectile;
     public float shootDistance = 1;
@@ -40,13 +41,18 @@ public class MovementPlayerScript : MonoBehaviour
         shootTimer += Time.deltaTime;
         Shoot();
         Movement();
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetButtonDown("Cancel"))
         {
             pause = !pause;
-            if (pause)
+            if (pause && !morto)
             {
-                Time.timeScale = 0;
                 menu.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else if (!morto)
+            {
+                menu.SetActive(false);
+                Time.timeScale = 1;
             }
         }
     }
@@ -55,6 +61,11 @@ public class MovementPlayerScript : MonoBehaviour
     {
         lifeBar.fillAmount = (float)vida / vidaMaxima;
         lifeText.text = vida + "/" + vidaMaxima;
+    }
+
+    public void Pausa()
+    {
+        Time.timeScale = 1;
     }
 
     void Movement()
@@ -123,6 +134,7 @@ public class MovementPlayerScript : MonoBehaviour
 
     void Morrer()
     {
+        morto = true;
         vida = vidaMaxima;
         Time.timeScale = 0;
         //int oldScore = PlayerPrefs.GetInt("Score");

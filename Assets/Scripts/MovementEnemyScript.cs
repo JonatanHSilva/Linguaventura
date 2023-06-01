@@ -12,18 +12,18 @@ public class MovementEnemyScript : MonoBehaviour
     Vector2 posicao;
     public Image lifeBar;
     public TextMeshProUGUI lifeText;
-    public int vida = 10, vidaAntiga;
+    public int vida = 10;
     public int vidaMaxima = 10;
     public int damage = 1;
     public GameObject proxFase;
     public SpriteRenderer spriteRenderer;
     public Sprite[] sprite;
-    int vez = 0, ativaQuiz = 0;
+    int vez = 0, ativaQuiz = 0, vidaAntiga;
 
     public GameObject projectile, quiz;
     public float shootDistance = 1;
     public float shootSpeed = 300;
-    public float shootCD = .8f;
+    public float shootCoolDown = .8f;
     float shootTimer = 0;
     Vector2 shootDirection = Vector2.left;
 
@@ -62,7 +62,7 @@ public class MovementEnemyScript : MonoBehaviour
             ChangeSprite(sprite[0]);
             transform.position = (new Vector2(transform.position.x, transform.position.y));
         }
-        if (transform.position.y < -1.8)
+        if (transform.position.y < -1.7)
         {
             direction *= -1;
             ChangeSprite(sprite[1]);
@@ -74,7 +74,7 @@ public class MovementEnemyScript : MonoBehaviour
 
     void Shoot()
     {
-        if (shootTimer > shootCD)
+        if (shootTimer > shootCoolDown)
         {
             GameObject shoot = Instantiate(projectile);
             shoot.transform.position = transform.position + Vector3.left * shootDistance;
@@ -147,7 +147,7 @@ public class MovementEnemyScript : MonoBehaviour
             ativaQuiz = 1;
             vidaAntiga = vida;
         }
-        else if (vida == 1 && ativaQuiz == 0)
+        else if (vida <= 10 && ativaQuiz == 0)
         {
             Time.timeScale = 0;
             quiz.SetActive(true);
@@ -155,7 +155,7 @@ public class MovementEnemyScript : MonoBehaviour
             vidaAntiga = vida;
         }
 
-        if(vidaAntiga != vida)
+        if(vidaAntiga != vida && vida > 10)
         {
             ativaQuiz = 0;
         }
