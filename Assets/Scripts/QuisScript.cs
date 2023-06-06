@@ -236,7 +236,9 @@ public class QuisScript : MonoBehaviour
     public void Errado()
     {
         respostas[respostas.Count - 1].quantidadeErros++;
-        //SetResposta();
+        SelecionarPergunta();
+        IniciarButtons();
+        SetResposta();
         Time.timeScale = 1;
         quiz.SetActive(false);
     }

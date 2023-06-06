@@ -18,7 +18,7 @@ public class MovementPlayerScript : MonoBehaviour
     public int damage = 1;
     public GameObject perdeu, menu;
     bool pause = false, morto = false;
-    //QuisScript quiz;
+    public GameObject quiz;
 
     public GameObject projectile;
     public float shootDistance = 1;
@@ -44,12 +44,17 @@ public class MovementPlayerScript : MonoBehaviour
         if (Input.GetButtonDown("Cancel"))
         {
             pause = !pause;
-            if (pause && !morto)
+            if (pause && !quiz.activeSelf && !morto)
             {
                 menu.SetActive(true);
                 Time.timeScale = 0;
             }
-            else if (!morto)
+            else if (quiz.activeSelf)
+            {
+                menu.SetActive(false);
+                Time.timeScale = 0;
+            }
+            else if (!morto )
             {
                 menu.SetActive(false);
                 Time.timeScale = 1;
@@ -147,5 +152,12 @@ public class MovementPlayerScript : MonoBehaviour
             newScoreText.text = "Sua Pontuação: " + newScore.ToString() + "\nPontuação Máxima: " + PlayerPrefs.GetInt("Score");*/
         perdeu.SetActive(true);
         transform.position = new Vector2(-8, 0);
+    }
+
+    public void FecharPause()
+    {
+        menu.SetActive(false);
+        Time.timeScale = 1;
+        pause = false;
     }
 }

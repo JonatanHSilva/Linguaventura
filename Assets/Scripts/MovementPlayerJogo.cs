@@ -7,6 +7,8 @@ public class MovementPlayerJogo : MonoBehaviour
     public float speed;
     public SpriteRenderer spriteRenderer;
     public Sprite[] sprite;
+    bool pause = false;
+    public GameObject menu;
     
 
     private void Start()
@@ -45,6 +47,21 @@ public class MovementPlayerJogo : MonoBehaviour
         dir.Normalize();
 
         GetComponent<Rigidbody2D>().velocity = speed * dir;
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            pause = !pause;
+            if (pause)
+            {
+                menu.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else if (pause == false)
+            {
+                menu.SetActive(false);
+                Time.timeScale = 1;
+            }
+        }
     }
 
     void ChangeSprite(Sprite updateSprite)

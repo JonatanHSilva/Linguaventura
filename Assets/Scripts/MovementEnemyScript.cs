@@ -56,17 +56,17 @@ public class MovementEnemyScript : MonoBehaviour
             ChangeSprite(sprite[0]);
             vez++;
         }
-        if (transform.position.y > 2.5)
+        if (transform.position.y > 2)
         {
             direction *= -1;
             ChangeSprite(sprite[0]);
-            transform.position = (new Vector2(transform.position.x, transform.position.y));
+            transform.position = new Vector2(transform.position.x, transform.position.y);
         }
         if (transform.position.y < -1.7)
         {
             direction *= -1;
             ChangeSprite(sprite[1]);
-            transform.position = (new Vector2(transform.position.x, transform.position.y));
+            transform.position = new Vector2(transform.position.x, transform.position.y);
         }
 
         GetComponent<Rigidbody2D>().velocity = speed * posicao;
@@ -155,7 +155,7 @@ public class MovementEnemyScript : MonoBehaviour
             vidaAntiga = vida;
         }
 
-        if(vidaAntiga != vida && vida > 10)
+        if(vidaAntiga != vida && vida >= 10)
         {
             ativaQuiz = 0;
         }
