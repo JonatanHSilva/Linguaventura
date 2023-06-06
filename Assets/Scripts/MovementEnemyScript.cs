@@ -40,6 +40,10 @@ public class MovementEnemyScript : MonoBehaviour
         Movement();
         Shoot();
         Quiz();
+        if(vida == 0)
+        {
+            Morrer();
+        }
     }
     void UpdateUI()
     {
@@ -105,9 +109,11 @@ public class MovementEnemyScript : MonoBehaviour
 
     void Morrer()
     {
-        Time.timeScale = 0;
-        proxFase.SetActive(true);
-        
+        if (!quiz.activeSelf)
+        {
+            Time.timeScale = 0;
+            proxFase.SetActive(true);
+        }
         /*try
         {
             //FindObjectOfType<MovementPlayerScript>().AddScore(scoreBonus);
