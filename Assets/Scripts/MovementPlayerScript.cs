@@ -19,6 +19,8 @@ public class MovementPlayerScript : MonoBehaviour
     public GameObject perdeu, menu;
     bool pause = false, morto = false;
     public GameObject quiz;
+    public TextMeshProUGUI hitText;
+    int hit = 0;
 
     public GameObject projectile;
     public float shootDistance = 1;
@@ -54,7 +56,7 @@ public class MovementPlayerScript : MonoBehaviour
                 menu.SetActive(false);
                 Time.timeScale = 0;
             }
-            else if (!morto )
+            else if (!morto)
             {
                 menu.SetActive(false);
                 Time.timeScale = 1;
@@ -64,6 +66,7 @@ public class MovementPlayerScript : MonoBehaviour
 
     void UpdateUI()
     {
+        hitText.text = hit + " Hit";
         lifeBar.fillAmount = (float)vida / vidaMaxima;
         lifeText.text = vida + "/" + vidaMaxima;
     }
@@ -107,7 +110,7 @@ public class MovementPlayerScript : MonoBehaviour
 
     void Shoot()
     {
-        if (Input.GetKey(KeyCode.Space) && shootTimer >= shootCD)
+        if (Input.GetButtonDown("Jump") && shootTimer >= shootCD)
         {
             GameObject shoot = Instantiate(projectile);
             shoot.transform.position = transform.position + Vector3.right * shootDistance;
@@ -119,10 +122,14 @@ public class MovementPlayerScript : MonoBehaviour
 
     public void TakeDamage()
     {
-        if (this.damage < 0)
+
+        if (damage < 0)
             return;
-        if (vida - this.damage > 0)
-            vida -= this.damage;
+        if (vida - damage > 0)
+        {
+            vida -= damage;
+            hit++;
+        }
         else
         {
             vida = 0;

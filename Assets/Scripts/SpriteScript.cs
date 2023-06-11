@@ -78,7 +78,7 @@ public class SpriteScript : MonoBehaviour
 
     IEnumerator Level1()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.2f);
         SceneManager.LoadScene("Level1");
     }
 

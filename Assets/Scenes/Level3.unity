@@ -1053,6 +1053,8 @@ MonoBehaviour:
   damage: 5
   perdeu: {fileID: 197872095}
   menu: {fileID: 950920555}
+  quiz: {fileID: 0}
+  hitText: {fileID: 0}
   projectile: {fileID: 3323178654941843580, guid: 6d34db1f5fc8dca4d83357288660c2be,
     type: 3}
   shootDistance: 1
@@ -2822,6 +2824,7 @@ MonoBehaviour:
   sprite:
   - {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
   - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
+  hitText: {fileID: 0}
   projectile: {fileID: 3323178654941843580, guid: e28a396aa1decaf4982634442858785a,
     type: 3}
   quiz: {fileID: 86079042}

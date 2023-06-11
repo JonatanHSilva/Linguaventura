@@ -7,10 +7,14 @@ public class ProjectileScript : MonoBehaviour
     public float tempo = 1;
     public GameObject explosion;
     public GameObject dissipate;
+    MovementEnemyScript inimigo;
+    MovementPlayerScript player;
 
     // Start is called before the first frame update
     void Start()
     {
+        player = FindObjectOfType<MovementPlayerScript>();
+        inimigo = FindObjectOfType<MovementEnemyScript>();
         StartCoroutine(DestroySelf());
     }
 
@@ -23,29 +27,34 @@ public class ProjectileScript : MonoBehaviour
     IEnumerator DestroySelf()
     {
         yield return new WaitForSeconds(tempo);
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D obj)
     {
-        if (obj.tag == "Player" && this.tag != "MagiaPlayer")
+        if (obj.CompareTag("Player") && !CompareTag("MagiaPlayer"))
         {
-            if (explosion != null) Instantiate(explosion, transform.position, Quaternion.identity);
-            obj.GetComponent<MovementPlayerScript>().TakeDamage();
-            Destroy(this.gameObject);
+            if (obj.GetType() == typeof(CircleCollider2D))
+            {
+                if (explosion != null) Instantiate(explosion, transform.position, Quaternion.identity);
+                player.TakeDamage();
+                Destroy(gameObject);
+            }
         }
-        if (obj.tag == "Enemy" && this.tag != "MagiaInimigo")
+        else if (obj.CompareTag("Enemy") && !CompareTag("MagiaInimigo"))
         {
-            if (explosion != null) Instantiate(explosion, transform.position, Quaternion.identity);
-            obj.GetComponent<MovementEnemyScript>().TakeDamage();
-            Destroy(this.gameObject);
+            if (obj.GetType() == typeof(CircleCollider2D))
+            {
+                if (explosion != null) Instantiate(explosion, transform.position, Quaternion.identity);
+                inimigo.TakeDamage();
+                Destroy(gameObject);
+            }
         }
-
-        if (obj.tag == "MagiaInimigo" || obj.tag == "MagiaPlayer")
+        else if (obj.CompareTag ("MagiaInimigo") || obj.CompareTag("MagiaPlayer"))
         {
             if (dissipate != null) Instantiate(dissipate, transform.position, Quaternion.identity);
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 }

@@ -18,7 +18,8 @@ public class MovementEnemyScript : MonoBehaviour
     public GameObject proxFase;
     public SpriteRenderer spriteRenderer;
     public Sprite[] sprite;
-    int vez = 0, ativaQuiz = 0, vidaAntiga;
+    int vez = 0, ativaQuiz = 0, vidaAntiga, hit = 0;
+    public TextMeshProUGUI hitText;
 
     public GameObject projectile, quiz;
     public float shootDistance = 1;
@@ -47,6 +48,7 @@ public class MovementEnemyScript : MonoBehaviour
     }
     void UpdateUI()
     {
+        hitText.text = hit + " Hit";
         lifeBar.fillAmount = (float)vida / vidaMaxima;
         lifeText.text = vida + "/" + vidaMaxima;
     }
@@ -95,10 +97,14 @@ public class MovementEnemyScript : MonoBehaviour
 
     public void TakeDamage()
     {
-        if (this.damage < 0)
+        
+        if (damage < 0)
             return;
-        if (vida - this.damage > 0)
-            vida -= this.damage;
+        if (vida - damage > 0)
+        {
+            vida -= damage;
+            hit++;
+        }   
         else
         {
             vida = 0;
