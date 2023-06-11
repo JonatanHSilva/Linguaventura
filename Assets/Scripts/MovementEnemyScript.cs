@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -20,6 +21,7 @@ public class MovementEnemyScript : MonoBehaviour
     public Sprite[] sprite;
     int vez = 0, ativaQuiz = 0, vidaAntiga, hit = 0;
     public TextMeshProUGUI hitText;
+    BoxCollider2D collide;
 
     public GameObject projectile, quiz;
     public float shootDistance = 1;
@@ -32,19 +34,20 @@ public class MovementEnemyScript : MonoBehaviour
     {
         vida = vidaMaxima;
         UpdateUI();
+        collide = gameObject.GetComponent<BoxCollider2D>();
     }
 
 
     private void Update()
     {
         shootTimer += Time.deltaTime;
-        Movement();
+        Movement(collide);
         Shoot();
-        Quiz();
         if(vida == 0)
         {
             Morrer();
         }
+        Quiz();
     }
     void UpdateUI()
     {
@@ -54,29 +57,33 @@ public class MovementEnemyScript : MonoBehaviour
         lifeText.text = vida + "/" + vidaMaxima;
     }
 
-    void Movement()
+    void Movement(Collider2D obj)
     {
         transform.Translate(new Vector2(0, direction * speed * Time.deltaTime));
 
-        if(direction == -1 && vez == 0)
+        if(obj.GetType() == typeof(BoxCollider2D))
         {
-            ChangeSprite(sprite[0]);
-            vez++;
-        }
-        if (transform.position.y > 2)
-        {
-            direction *= -1;
-            ChangeSprite(sprite[0]);
-            transform.position = new Vector2(transform.position.x, transform.position.y);
-        }
-        if (transform.position.y < -1.7)
-        {
-            direction *= -1;
-            ChangeSprite(sprite[1]);
-            transform.position = new Vector2(transform.position.x, transform.position.y);
-        }
+            if (direction == -1 && vez == 0)
+            {
+                ChangeSprite(sprite[0]);
+                vez++;
+            }
+            if (transform.position.y > 2.6)
+            {
+                direction *= -1;
+                ChangeSprite(sprite[0]);
+                transform.position = new Vector2(transform.position.x, transform.position.y);
+            }
+            if (transform.position.y < -2)
+            {
+                direction *= -1;
+                ChangeSprite(sprite[1]);
+                transform.position = new Vector2(transform.position.x, transform.position.y);
+            }
 
-        GetComponent<Rigidbody2D>().velocity = speed * posicao;
+            GetComponent<Rigidbody2D>().velocity = speed * posicao;
+        }
+        
     }
 
     void Shoot()
@@ -160,7 +167,7 @@ public class MovementEnemyScript : MonoBehaviour
             ativaQuiz = 1;
             vidaAntiga = vida;
         }
-        else if (vida <= 10 && ativaQuiz == 0)
+        else if ((float)vida == (float)vidaMaxima * 0.1 && ativaQuiz == 0)
         {
             Time.timeScale = 0;
             quiz.SetActive(true);
@@ -168,9 +175,12 @@ public class MovementEnemyScript : MonoBehaviour
             vidaAntiga = vida;
         }
 
-        if(vidaAntiga != vida && vida >= 10)
+        if (vidaAntiga != vida && (float)vida >= (float)vidaMaxima * 0.1)
         {
             ativaQuiz = 0;
         }
+        
+
+
     }
 }

@@ -751,7 +751,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 197872101}
         m_TargetAssemblyTypeName: SpriteScript, Assembly-CSharp
-        m_MethodName: Fase1
+        m_MethodName: Fase3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1049,8 +1049,8 @@ MonoBehaviour:
   lifeBar: {fileID: 1347603467}
   lifeText: {fileID: 1702308128}
   vida: 5
-  vidaMaxima: 100
-  damage: 5
+  vidaMaxima: 200
+  damage: 15
   perdeu: {fileID: 197872095}
   menu: {fileID: 950920555}
   quiz: {fileID: 86079042}
@@ -2883,8 +2883,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545163192}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.07, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1551404160}
@@ -2932,7 +2932,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300006, guid: ec47f75fe8aff1644ac73998f4ad31b5, type: 3}
-  m_Color: {r: 0.3679245, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.009433985, g: 0.0001245993, b: 0.0001245993, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3048,7 +3048,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
-  m_Color: {r: 0.4433962, g: 0.047685977, b: 0.047685977, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -3075,8 +3075,8 @@ MonoBehaviour:
   lifeBar: {fileID: 858805266}
   lifeText: {fileID: 1966941898}
   vida: 10
-  vidaMaxima: 100
-  damage: 10
+  vidaMaxima: 200
+  damage: 20
   proxFase: {fileID: 1035958537}
   spriteRenderer: {fileID: 1551404158}
   sprite:
@@ -3087,8 +3087,8 @@ MonoBehaviour:
     type: 3}
   quiz: {fileID: 86079042}
   shootDistance: 1
-  shootSpeed: 170
-  shootCoolDown: 1
+  shootSpeed: 380
+  shootCoolDown: 0.5
 --- !u!4 &1551404160
 Transform:
   m_ObjectHideFlags: 0

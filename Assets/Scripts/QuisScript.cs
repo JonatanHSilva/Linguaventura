@@ -136,7 +136,7 @@ public class QuisScript : MonoBehaviour
         }
         catch (System.Exception ex)
         {
-            Debug.Log("Erro no load: " + ex.ToString());
+            Debug.Log("Erro ao ler: " + ex.ToString());
             return false;
         }
     }
@@ -182,7 +182,7 @@ public class QuisScript : MonoBehaviour
         if (perguntas.Count == 0 || perguntas == null)
         {
             SalvarRespostas();
-            SceneManager.LoadScene(ProximoLevel);
+            //SceneManager.LoadScene(ProximoLevel);
             return;
         }
         
@@ -228,7 +228,7 @@ public class QuisScript : MonoBehaviour
     {
         quiz.SetActive(false);
         Time.timeScale = 1;
-        Debug.Log("certo: " + perguntaAtual.respostaCerta);
+        Debug.Log("Certo: " + perguntaAtual.respostaCerta);
         SelecionarPergunta();
         IniciarButtons();
         SetResposta();

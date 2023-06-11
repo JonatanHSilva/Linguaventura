@@ -14,39 +14,40 @@ public class MovementPlayerJogo : MonoBehaviour
     private void Start()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        Time.timeScale = 1;
     }
 
 
     private void Update()
     {
-        Vector2 dir = Vector2.zero;
+        Vector2 direction = Vector2.zero;
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            dir.x = -1;
+            direction.x = -1;
             spriteRenderer.flipX = true;
             ChangeSprite(sprite[0]);
         }
         else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            dir.x = 1;
+            direction.x = 1;
             spriteRenderer.flipX = false;
             ChangeSprite(sprite[1]);
         }
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
-            dir.y = 1;
+            direction.y = 1;
             ChangeSprite(sprite[2]);
         }
         else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
-            dir.y = -1;
+            direction.y = -1;
             ChangeSprite(sprite[3]);
         }
 
-        dir.Normalize();
+        direction.Normalize();
 
-        GetComponent<Rigidbody2D>().velocity = speed * dir;
+        GetComponent<Rigidbody2D>().velocity = speed * direction;
 
         if (Input.GetButtonDown("Cancel"))
         {
