@@ -66,7 +66,8 @@ public class MovementPlayerScript : MonoBehaviour
 
     void UpdateUI()
     {
-        hitText.text = hit + " Hit";
+        if (hit == 1) hitText.text = hit + " Hit";
+        else hitText.text = hit + " Hits";
         lifeBar.fillAmount = (float)vida / vidaMaxima;
         lifeText.text = vida + "/" + vidaMaxima;
     }
