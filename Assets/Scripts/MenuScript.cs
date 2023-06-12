@@ -30,11 +30,6 @@ public class MenuScript : MonoBehaviour
         Time.timeScale = 1; 
     }
 
-    public void AreaProf()
-    {
-        Time.timeScale = 1;
-        StartCoroutine(AreaP());
-    }
     public void Fechar()
     {
         Time.timeScale = 1;
@@ -53,11 +48,6 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene("Jogo");
     }
 
-    IEnumerator AreaP()
-    {
-        yield return new WaitForSeconds(.5f);
-        SceneManager.LoadScene("AreaProf");
-    }
 
     IEnumerator VoltarAoMenu()
     {

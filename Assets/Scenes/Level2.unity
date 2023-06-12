@@ -2358,12 +2358,32 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: fileName
-      value: Vozes Verbais
+      value: Fase 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: arquivo.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.size
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: arquivo.Array.data[0]
+      value: Verbos e seus componentes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: arquivo.Array.data[1]
+      value: Verbos e seus componentes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: arquivo.Array.data[2]
+      value: Vozes Verbais
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}

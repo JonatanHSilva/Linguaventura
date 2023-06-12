@@ -129,6 +129,7 @@ MonoBehaviour:
     type: 3}
   buttonErrado: {fileID: 2224157713203013035, guid: 729fa47edc1b08842b57d989c0782740,
     type: 3}
+  arquivo: []
   perguntas: []
   perguntasSelecionadas: []
   respostas: []
