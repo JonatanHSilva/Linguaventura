@@ -2395,15 +2395,15 @@ PrefabInstance:
         type: 3}
       propertyPath: perguntas.Array.data[1].pergunta
       value: "Na Voz Passiva, o sujeito da ora\xE7\xE3o \xE9 paciente, ou seja, o
-        sujeito \xE9 quem sofre a a\xE7\xE3o verbal. Com isso, qual \xE9 a frase
+        sujeito \xE9 quem sofre a a\xE7\xE3o verbal. \nCom isso, qual \xE9 a frase
         que possui a Voz Verbal mencionada?"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].pergunta
       value: "A Voz Passiva pode se dividir em dois tipos, onde cada um deles possui
-        uma rela\xE7\xE3o e uma forma\xE7\xE3o de frase diferente. Selecione o tipo
-        que corresponde a Voz Passiva:"
+        uma rela\xE7\xE3o e uma forma\xE7\xE3o de frase diferente. \nSelecione o
+        tipo que corresponde a Voz Passiva:"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2417,7 +2417,7 @@ PrefabInstance:
         type: 3}
       propertyPath: perguntas.Array.data[4].pergunta
       value: "A Voz Reflexiva pode ser rec\xEDproca, ou seja, se h\xE1 mais de um
-        sujeito na ora\xE7\xE3o, todos recebem a a\xE7\xE3o ao mesmo tempo. Assim,
+        sujeito na ora\xE7\xE3o, todos recebem a a\xE7\xE3o ao mesmo tempo. \nAssim,
         qual frase representa essa reciprocidade?"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
