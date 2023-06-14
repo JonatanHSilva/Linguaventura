@@ -11,6 +11,7 @@ public class QuisEditScript : QuisScript
     public string sceneToLoad;
     List<GameObject> perguntasUI = new List<GameObject>();
     public Scrollbar scroll;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,5 +63,4 @@ public class QuisEditScript : QuisScript
     {
         SceneManager.LoadScene(sceneToLoad);
     }
-    
 }

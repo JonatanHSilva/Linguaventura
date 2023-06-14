@@ -7,14 +7,14 @@ public class ProjectileScript : MonoBehaviour
     public float tempo = 1;
     public GameObject explosion;
     public GameObject dissipate;
-    MovementEnemyScript inimigo;
+    MovementEnemyScript1 inimigo;
     MovementPlayerScript player;
 
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<MovementPlayerScript>();
-        inimigo = FindObjectOfType<MovementEnemyScript>();
+        inimigo = FindObjectOfType<MovementEnemyScript1>();
         StartCoroutine(DestroySelf());
     }
 

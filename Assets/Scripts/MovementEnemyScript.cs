@@ -22,6 +22,7 @@ public class MovementEnemyScript : MonoBehaviour
     int vez = 0, ativaQuiz = 0, vidaAntiga, hit = 0;
     public TextMeshProUGUI hitText;
     BoxCollider2D collide;
+    int direcao;
 
     public GameObject projectile, quiz;
     public float shootDistance = 1;
@@ -32,6 +33,7 @@ public class MovementEnemyScript : MonoBehaviour
 
     private void Start()
     {
+        
         vida = vidaMaxima;
         UpdateUI();
         collide = gameObject.GetComponent<BoxCollider2D>();

@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class SerializableList<T>
@@ -185,11 +184,11 @@ public class QuisScript : MonoBehaviour
             //SceneManager.LoadScene(ProximoLevel);
             return;
         }
-        
+
         perguntaAtual = perguntas[Random.Range(0, perguntas.Count)];
         perguntasSelecionadas.Add(perguntaAtual);
         perguntas.Remove(perguntaAtual);
-        respostas.Add(new Resposta(perguntaAtual.pergunta,perguntaAtual.respostaCerta,0));
+        respostas.Add(new Resposta(perguntaAtual.pergunta, perguntaAtual.respostaCerta, 0));
     }
     void IniciarButtons()
     {

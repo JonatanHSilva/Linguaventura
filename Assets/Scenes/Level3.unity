@@ -2358,7 +2358,7 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: fileName
-      value: Vozes Verbais
+      value: Fase 2
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2369,27 +2369,36 @@ PrefabInstance:
         type: 3}
       propertyPath: perguntas.Array.data[0].pergunta
       value: "No contexto de Vozes Verbais qual Voz \xE9 corresponde \xE0 seguinte
-        frase: \n\"William Shakespeare escreveu a pe\xE7a Sonho de uma noite de ver\xE3o\""
+        frase: \n\"William Shakespeare escreveu a pe\xE7a Sonho de uma noite de ver\xE3o.\""
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].pergunta
-      value: 
+      value: "Na Voz Passiva, o sujeito da ora\xE7\xE3o \xE9 paciente, ou seja, o
+        sujeito \xE9 quem sofre a a\xE7\xE3o verbal. \nCom isso, qual \xE9 a frase
+        que possui a Voz Verbal mencionada?"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].pergunta
-      value: 
+      value: "A Voz Passiva pode se dividir em dois tipos, onde cada um deles possui
+        uma rela\xE7\xE3o e uma forma\xE7\xE3o de frase diferente. \nSelecione o
+        tipo que corresponde a Voz Passiva:"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].pergunta
-      value: 
+      value: 'Selecione qual Voz Verbal corresponde a seguinte frase:
+
+        "Ele
+        embrenhou-se num espinheiro[...]".'
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].pergunta
-      value: 
+      value: "A Voz Reflexiva pode ser rec\xEDproca, ou seja, se h\xE1 mais de um
+        sujeito na ora\xE7\xE3o, todos recebem a a\xE7\xE3o ao mesmo tempo. \nAssim,
+        qual frase representa essa reciprocidade?"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2399,22 +2408,22 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].qtdRespostas
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].qtdRespostas
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].qtdRespostas
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].qtdRespostas
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2424,22 +2433,22 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaCerta
-      value: 
+      value: "O feiti\xE7o foi quebrado por ele."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaCerta
-      value: 
+      value: "Anal\xEDtica"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaCerta
-      value: 
+      value: Voz Reflexiva
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaCerta
-      value: 
+      value: "Os tr\xEAs uniram-se para moldar essa mentira."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2459,62 +2468,62 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaA
-      value: 
+      value: "Ele quebrou o feiti\xE7o."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaB
-      value: 
+      value: "Quebrou-se o feiti\xE7o."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaC
-      value: 
+      value: "Ele desenfeiti\xE7ou-se."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaErradaA
-      value: 
+      value: Quantitativa
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaErradaB
-      value: 
+      value: Qualitativa
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaErradaC
-      value: 
+      value: Reflexiva
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaErradaA
-      value: 
+      value: Voz Ativa
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaErradaB
-      value: 
+      value: Voz Passiva
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaErradaC
-      value: 
+      value: Voz Inativa
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaErradaA
-      value: 
+      value: "Os feiti\xE7os foram quebrados por ele."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaErradaB
-      value: 
+      value: "William Shakespeare escreveu varias pe\xE7as."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaErradaC
-      value: 
+      value: "Lisandro \xE9 amado por H\xE9rmia."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2952,6 +2961,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1551404160}
   - component: {fileID: 1551404159}
+  - component: {fileID: 1551404163}
   - component: {fileID: 1551404158}
   - component: {fileID: 1551404156}
   - component: {fileID: 1551404155}
@@ -3065,7 +3075,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551404154}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1035df05c4dec934b9544cfcb1a9d3e0, type: 3}
   m_Name: 
@@ -3082,7 +3092,7 @@ MonoBehaviour:
   sprite:
   - {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
   - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
-  hitText: {fileID: 1900691526}
+  hitText: {fileID: 1947394699}
   projectile: {fileID: 3323178654941843580, guid: e28a396aa1decaf4982634442858785a,
     type: 3}
   quiz: {fileID: 86079042}
@@ -3147,6 +3157,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15, y: 0.13}
   m_EdgeRadius: 0
+--- !u!114 &1551404163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551404154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ae2a14af23b2a4cade21dbd8b2304f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  lifeBar: {fileID: 858805266}
+  lifeText: {fileID: 1966941898}
+  vida: 10
+  vidaMaxima: 200
+  damage: 20
+  proxFase: {fileID: 1035958537}
+  spriteRenderer: {fileID: 1551404158}
+  sprite:
+  - {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
+  - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
+  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
+  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
+  hitText: {fileID: 1947394699}
+  projectile: {fileID: 3323178654941843580, guid: 1fd5d3ba1471e5d4d87899808ed37dd3,
+    type: 3}
+  quiz: {fileID: 86079042}
+  shootDistance: 1
+  shootSpeed: 380
+  shootCoolDown: 0.5
 --- !u!1 &1566745668
 GameObject:
   m_ObjectHideFlags: 0

@@ -2981,6 +2981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1551404160}
   - component: {fileID: 1551404159}
+  - component: {fileID: 1551404163}
   - component: {fileID: 1551404158}
   - component: {fileID: 1551404156}
   - component: {fileID: 1551404155}
@@ -3094,7 +3095,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551404154}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1035df05c4dec934b9544cfcb1a9d3e0, type: 3}
   m_Name: 
@@ -3111,8 +3112,8 @@ MonoBehaviour:
   sprite:
   - {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
   - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
-  hitText: {fileID: 1900691526}
-  projectile: {fileID: 3323178654941843580, guid: e28a396aa1decaf4982634442858785a,
+  hitText: {fileID: 1947394699}
+  projectile: {fileID: 3323178654941843580, guid: 15eb91c93de4e6a4db0319f7ea9748d2,
     type: 3}
   quiz: {fileID: 86079042}
   shootDistance: 1
@@ -3176,6 +3177,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15, y: 0.13}
   m_EdgeRadius: 0
+--- !u!114 &1551404163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551404154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ae2a14af23b2a4cade21dbd8b2304f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  lifeBar: {fileID: 858805266}
+  lifeText: {fileID: 1966941898}
+  vida: 10
+  vidaMaxima: 150
+  damage: 15
+  proxFase: {fileID: 1035958537}
+  spriteRenderer: {fileID: 1551404158}
+  sprite:
+  - {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
+  - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
+  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
+  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
+  hitText: {fileID: 1947394699}
+  projectile: {fileID: 3323178654941843580, guid: 15eb91c93de4e6a4db0319f7ea9748d2,
+    type: 3}
+  quiz: {fileID: 86079042}
+  shootDistance: 1
+  shootSpeed: 250
+  shootCoolDown: 0.7
 --- !u!1 &1566745668
 GameObject:
   m_ObjectHideFlags: 0

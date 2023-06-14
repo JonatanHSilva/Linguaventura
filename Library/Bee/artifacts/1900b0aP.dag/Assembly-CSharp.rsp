@@ -326,6 +326,7 @@
 "Assets/Scripts/QuisButtonsScript.cs"
 "Assets/Scripts/QuisEditScript.cs"
 "Assets/Scripts/QuisScript.cs"
+"Assets/Scripts/SelecionarFaseQuiz.cs"
 "Assets/Scripts/SpriteScript.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
