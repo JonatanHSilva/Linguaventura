@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  screenLimit: {x: -4, y: 5}
+  screenLimit: {x: -1, y: 5}
   spriteRenderer: {fileID: 405116083}
   sprite:
   - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
