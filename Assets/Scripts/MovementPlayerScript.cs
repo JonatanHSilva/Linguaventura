@@ -74,10 +74,6 @@ public class MovementPlayerScript : MonoBehaviour
         lifeText.text = vida + "/" + vidaMaxima;
     }
 
-    public void Pausa()
-    {
-        Time.timeScale = 1;
-    }
 
     void Movement(Collider2D obj)
     {
@@ -153,7 +149,7 @@ public class MovementPlayerScript : MonoBehaviour
     void Morrer()
     {
         morto = true;
-        vida = vidaMaxima;
+        //vida = vidaMaxima;
         Time.timeScale = 0;
         //int oldScore = PlayerPrefs.GetInt("Score");
         //int newScore = (int)gameTimer + score;
@@ -164,13 +160,6 @@ public class MovementPlayerScript : MonoBehaviour
         if (newScoreText != null)
             newScoreText.text = "Sua Pontuação: " + newScore.ToString() + "\nPontuação Máxima: " + PlayerPrefs.GetInt("Score");*/
         perdeu.SetActive(true);
-        transform.position = new Vector2(-8, 0);
-    }
-
-    public void FecharPause()
-    {
-        menu.SetActive(false);
-        Time.timeScale = 1;
-        pause = false;
+        //transform.position = new Vector2(transform.position.x, transform.position.y);
     }
 }

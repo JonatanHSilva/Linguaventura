@@ -22,14 +22,13 @@ public class SenhaProf : MonoBehaviour
     List<Senha> senha = new List<Senha>();
     [SerializeField]
     Senha s;
-    [SerializeField]
     public TMP_InputField password;
-    [SerializeField]
     public TMP_InputField changePassword;
     public TMP_InputField matchedPassword;
     public GameObject areaProf, senhaCorreta;
     public Text mensagem;
-    int ok = 0;
+    public Button botao;
+    bool click = false;
 
     private void Start()
     {
@@ -38,7 +37,7 @@ public class SenhaProf : MonoBehaviour
 
     private void Update()
     {
-        
+        botao.onClick.AddListener(clicked);
     }
 
 
@@ -91,52 +90,78 @@ public class SenhaProf : MonoBehaviour
 
     public void VerificarSenha()
     {
+        LoadSenha();
         s = senha[0];
-
-        if (password.text == s.senha)
+        if (Input.GetButtonDown("Submit") || click == true)
         {
-            areaProf.SetActive(false);
-            senhaCorreta.SetActive(true);
-            password.text = "";
-        }
-        else
-        {
-            password.text = "";
-            mensagem.text = "Senha Incorreta. Tente Novamente.";
-            Hide();
+            if (password.text == s.senha)
+            {
+                areaProf.SetActive(false);
+                senhaCorreta.SetActive(true);
+                password.text = "";
+                Erase();
+            }
+            else
+            {
+                password.text = "";
+                mensagem.text = "Senha Incorreta. Tente Novamente.";
+                Invoke("Erase", 5);
+            }
+            click = false;
         }
     }
 
     public void AlterarSenha()
     {
         s = senha[0];
-        if(password.text != s.senha)
+        if(Input.GetButtonDown("Submit") || click == true)
         {
-            mensagem.text = "Senha Atual Incorreta. Tente Novamente.";
-        }
-        else
-        {
-            ok++;
-        }
+            if (password.text != s.senha)
+            {
+                mensagem.text = "Senha Atual Incorreta. Tente Novamente.";
+                Invoke("Erase", 5);
+            }
+            else if(password.text == changePassword.text)
+            {
+                mensagem.text = "Digite uma senha diferente da atual.";
+                Invoke("Erase", 5);
+            }
+            else
+            {
+                if (changePassword.text != matchedPassword.text)
+                {
+                    mensagem.text = "Senhas nao conferem. Digite novamente.";
+                    Invoke("Erase", 5);
+                }
+                else if (changePassword.text != "")
+                {
+                    s.senha = changePassword.text;
+                    SetSenha();
+                    areaProf.SetActive(false);
+                    senhaCorreta.SetActive(true);
+                    changePassword.text = "";
+                    password.text = "";
+                    matchedPassword.text = "";
+                    Erase();
+                }
+                else
+                {
+                    mensagem.text = "Digite uma nova senha.";
+                    Invoke("Erase", 5);
+                }
+            }
 
-        if(changePassword.text != matchedPassword.text)
-        {
-            mensagem.text = "Senhas nao conferem. Digite novamente.";
+            
         }
-
-        else if(ok == 1)
-        {
-            s.senha = changePassword.text;
-            SetSenha();
-            areaProf.SetActive(false);
-            senhaCorreta.SetActive(true);
-        }
-    }
-
-    IEnumerator Hide()
-    {
-        yield return new WaitForSeconds(5);
-        mensagem.text = "";
     }
     
+    void clicked()
+    {
+        click = true;
+    }
+
+    void Erase()
+    {
+        mensagem.text = "";
+    }
 }

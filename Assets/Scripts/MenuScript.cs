@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
+    SetFaseScript s;
     // Start is called before the first frame update
     void Start()
     {
-
+        s = FindObjectOfType<SetFaseScript>();
     }
 
     // Update is called once per frame
@@ -32,6 +33,7 @@ public class MenuScript : MonoBehaviour
 
     public void Fechar()
     {
+        s.Reinicio();
         Time.timeScale = 1;
         StartCoroutine(WaitFechar());
     }

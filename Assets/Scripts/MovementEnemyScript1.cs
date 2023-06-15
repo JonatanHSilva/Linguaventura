@@ -7,6 +7,8 @@ using TMPro;
 
 public class MovementEnemyScript1 : MonoBehaviour
 {
+    SetFaseScript s;
+
     public float speed;
     Vector2 dir;
     public Image lifeBar;
@@ -31,20 +33,25 @@ public class MovementEnemyScript1 : MonoBehaviour
 
     private void Start()
     {
+        s = FindObjectOfType<SetFaseScript>();
         direcao = Random.Range(0, 3);
         switch (direcao)
         {
             case 0:
                 dir.y = -1;
+                dir.x = Eixo();
                 break;
             case 1:
                 dir.x = -1;
+                dir.y = Eixo();
                 break;
             case 2:
                 dir.y = 1;
+                dir.x = Eixo();
                 break;
             case 3:
                 dir.x = 1;
+                dir.y = Eixo();
                 break;
         }
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -75,7 +82,6 @@ public class MovementEnemyScript1 : MonoBehaviour
 
     void Movement(Collider2D obj)
     {
-
         if(obj.GetType() == typeof(BoxCollider2D))
         {
             if(dir.x != 0)
@@ -116,12 +122,15 @@ public class MovementEnemyScript1 : MonoBehaviour
                 {
                     case 0:
                         dir.y = -1;
+                        dir.x = Eixo();
                         break;
                     case 1:
                         dir.x = -1;
+                        dir.y = Eixo();
                         break;
                     case 3:
                         dir.x = 1;
+                        dir.y = Eixo();
                         break;
                 }
                 transform.position = new Vector2(transform.position.x, transform.position.y);
@@ -137,12 +146,15 @@ public class MovementEnemyScript1 : MonoBehaviour
                 {
                     case 1:
                         dir.x = -1;
+                        dir.y = Eixo();
                         break;
                     case 2:
                         dir.y = 1;
+                        dir.x = Eixo();
                         break;
                     case 3:
                         dir.x = 1;
+                        dir.y = Eixo();
                         break;
                 }
                 transform.position = new Vector2(transform.position.x, transform.position.y);
@@ -160,12 +172,15 @@ public class MovementEnemyScript1 : MonoBehaviour
                 {
                     case 0:
                         dir.y = -1;
+                        dir.x = Eixo();
                         break;
                     case 2:
                         dir.y = 1;
+                        dir.x = Eixo();
                         break;
                     case 3:
                         dir.x = 1;
+                        dir.y = Eixo();
                         break;
                 }
                 transform.position = new Vector2(transform.position.x, transform.position.y);
@@ -180,12 +195,15 @@ public class MovementEnemyScript1 : MonoBehaviour
                 {
                     case 0:
                         dir.y = -1;
+                        dir.x = Eixo();
                         break;
                     case 1:
                         dir.x = -1;
+                        dir.y = Eixo();
                         break;
                     case 2:
                         dir.y = 1;
+                        dir.x = Eixo();
                         break;
                 }
                 transform.position = new Vector2(transform.position.x, transform.position.y);
@@ -226,6 +244,7 @@ public class MovementEnemyScript1 : MonoBehaviour
         else
         {
             vida = 0;
+            s.MudarFase();
             Morrer();
         }
         UpdateUI();
@@ -238,12 +257,6 @@ public class MovementEnemyScript1 : MonoBehaviour
             Time.timeScale = 0;
             proxFase.SetActive(true);
         }
-        /*try
-        {
-            //FindObjectOfType<MovementPlayerScript>().AddScore(scoreBonus);
-        }
-        catch { }*/
-        
     }
 
     void Quiz()
@@ -291,5 +304,11 @@ public class MovementEnemyScript1 : MonoBehaviour
         }
     }
 
+    int Eixo()
+    {
+        return Random.Range(-1, 2);
+    }
+
+    
     
 }

@@ -84,13 +84,13 @@ public class SpriteScript : MonoBehaviour
 
     IEnumerator Level2()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.2f);
         SceneManager.LoadScene("Level2");
     }
 
     IEnumerator Level3()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.2f);
         SceneManager.LoadScene("Level3");
     }
 

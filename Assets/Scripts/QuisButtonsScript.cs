@@ -6,14 +6,14 @@ public class QuisButtonsScript : MonoBehaviour
 {
     QuisScript quis;
     MovementPlayerScript dano;
-    MovementEnemyScript danoInimigo;
+    MovementEnemyScript1 danoInimigo;
     
     // Start is called before the first frame update
     void Start()
     {
         quis = FindObjectOfType<QuisScript>();
         dano = FindObjectOfType<MovementPlayerScript>();
-        danoInimigo = FindObjectOfType<MovementEnemyScript>();
+        danoInimigo = FindObjectOfType<MovementEnemyScript1>();
     }
     public void Clicked(bool certa)
     {

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class SelecionarFaseQuiz : QuisEditScript
+public class SelecionarFaseQuiz : MonoBehaviour
 {
     
     // Start is called before the first frame update
