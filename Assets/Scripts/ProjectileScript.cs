@@ -8,6 +8,7 @@ public class ProjectileScript : MonoBehaviour
     public GameObject explosion;
     public GameObject dissipate;
     MovementEnemyScript1 inimigo;
+    MovementEnemyScript inimigo1;
     MovementPlayerScript player;
 
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class ProjectileScript : MonoBehaviour
     {
         player = FindObjectOfType<MovementPlayerScript>();
         inimigo = FindObjectOfType<MovementEnemyScript1>();
+        inimigo1 = FindObjectOfType<MovementEnemyScript>();
         StartCoroutine(DestroySelf());
     }
 
@@ -47,6 +49,15 @@ public class ProjectileScript : MonoBehaviour
             {
                 if (explosion != null) Instantiate(explosion, transform.position, Quaternion.identity);
                 inimigo.TakeDamage();
+                Destroy(gameObject);
+            }
+        }
+        else if (obj.CompareTag("Enemy4") && !CompareTag("MagiaInimigo"))
+        {
+            if (obj.GetType() == typeof(CircleCollider2D))
+            {
+                if (explosion != null) Instantiate(explosion, transform.position, Quaternion.identity);
+                inimigo1.TakeDamage();
                 Destroy(gameObject);
             }
         }

@@ -529,6 +529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &200141374
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,6 +930,7 @@ GameObject:
   - component: {fileID: 405116081}
   - component: {fileID: 405116088}
   - component: {fileID: 405116089}
+  - component: {fileID: 405116090}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1040,12 +1042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   screenLimit: {x: -1, y: 5}
-  spriteRenderer: {fileID: 405116083}
-  sprite:
-  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
-  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
-  - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
-  - {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
+  animator: {fileID: 405116090}
   lifeBar: {fileID: 1347603467}
   lifeText: {fileID: 1702308128}
   vida: 5
@@ -1055,6 +1052,7 @@ MonoBehaviour:
   menu: {fileID: 950920555}
   quiz: {fileID: 86079042}
   hitText: {fileID: 1900691526}
+  rb: {fileID: 405116081}
   projectile: {fileID: 3323178654941843580, guid: 6d34db1f5fc8dca4d83357288660c2be,
     type: 3}
   shootDistance: 1
@@ -1102,6 +1100,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15, y: 0.15}
   m_EdgeRadius: 0
+--- !u!95 &405116090
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405116079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7216bfbb9aad6e644a18c2dcd17e1d41, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &518794662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,8 +1712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   screenLimit: {x: -4, y: 5}
-  spriteRenderer: {fileID: 0}
-  sprite: []
+  animator: {fileID: 0}
   lifeBar: {fileID: 0}
   lifeText: {fileID: 0}
   vida: 10
@@ -1704,6 +1722,7 @@ MonoBehaviour:
   menu: {fileID: 950920555}
   quiz: {fileID: 0}
   hitText: {fileID: 0}
+  rb: {fileID: 0}
   projectile: {fileID: 0}
   shootDistance: 1
   shootSpeed: 300
@@ -3005,9 +3024,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551404154}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eb1ae3e395b532e4d8dbc08a412e4a7d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1021dafc7558c01429240421916d58b7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3080,9 +3099,9 @@ SpriteRenderer:
   m_SortingLayerID: -1869315837
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd8239e2c92e7454bb21a3495529f889, type: 3}
   m_Color: {r: 0.4433962, g: 0.047685977, b: 0.047685977, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.65625, y: 1.4}
@@ -3104,20 +3123,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  screenLimit: {x: 6, y: 3.5}
   lifeBar: {fileID: 858805266}
   lifeText: {fileID: 1966941898}
   vida: 10
   vidaMaxima: 100
   damage: 10
   proxFase: {fileID: 1035958537}
-  spriteRenderer: {fileID: 1551404158}
-  sprite:
-  - {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
-  - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
-  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
-  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
   hitText: {fileID: 1947394699}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
   projectile: {fileID: 3323178654941843580, guid: e28a396aa1decaf4982634442858785a,
     type: 3}
   quiz: {fileID: 86079042}
@@ -3194,20 +3208,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ae2a14af23b2a4cade21dbd8b2304f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   lifeBar: {fileID: 858805266}
   lifeText: {fileID: 1966941898}
   vida: 10
   vidaMaxima: 100
   damage: 10
   proxFase: {fileID: 1035958537}
-  spriteRenderer: {fileID: 1551404158}
-  sprite:
-  - {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
-  - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
-  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
-  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
   hitText: {fileID: 1947394699}
+  rb: {fileID: 1551404156}
+  animator: {fileID: 1551404155}
   projectile: {fileID: 3323178654941843580, guid: e28a396aa1decaf4982634442858785a,
     type: 3}
   quiz: {fileID: 86079042}

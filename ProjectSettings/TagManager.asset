@@ -10,6 +10,10 @@ TagManager:
   - Enemy
   - MagiaInimigo
   - MagiaPlayer
+  - Enemy4
+  - Glow
+  - Scene
+  - Level 4
   layers:
   - Default
   - TransparentFX

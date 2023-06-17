@@ -17,13 +17,13 @@ public class MovementEnemyScript1 : MonoBehaviour
     public int vidaMaxima = 10;
     public int damage = 1;
     public GameObject proxFase;
-    public SpriteRenderer spriteRenderer;
-    public Sprite[] sprite;
     int ativaQuiz = 0, vidaAntiga, hit = 0;
     public TextMeshProUGUI hitText;
     BoxCollider2D collide;
     int direcao;
 
+    public Rigidbody2D rb;
+    public Animator animator;
     public GameObject projectile, quiz;
     public float shootDistance = 1;
     public float shootSpeed = 300;
@@ -34,27 +34,34 @@ public class MovementEnemyScript1 : MonoBehaviour
     private void Start()
     {
         s = FindObjectOfType<SetFaseScript>();
-        direcao = Random.Range(0, 3);
+        direcao = Random.Range(0, 4);
         switch (direcao)
         {
             case 0:
                 dir.y = -1;
                 dir.x = Eixo();
+                animator.SetFloat("Horizontal", dir.x);
+                animator.SetFloat("Vertical", dir.y);
                 break;
             case 1:
                 dir.x = -1;
                 dir.y = Eixo();
+                animator.SetFloat("Horizontal", dir.x);
+                animator.SetFloat("Vertical", dir.y);
                 break;
             case 2:
                 dir.y = 1;
                 dir.x = Eixo();
+                animator.SetFloat("Horizontal", dir.x);
+                animator.SetFloat("Vertical", dir.y);
                 break;
             case 3:
                 dir.x = 1;
                 dir.y = Eixo();
+                animator.SetFloat("Horizontal", dir.x);
+                animator.SetFloat("Vertical", dir.y);
                 break;
         }
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         vida = vidaMaxima;
         UpdateUI();
         collide = gameObject.GetComponent<BoxCollider2D>();
@@ -82,37 +89,22 @@ public class MovementEnemyScript1 : MonoBehaviour
 
     void Movement(Collider2D obj)
     {
-        if(obj.GetType() == typeof(BoxCollider2D))
+        if (obj.GetType() == typeof(BoxCollider2D))
         {
-            if(dir.x != 0)
+            /*if (dir.x != 0)
             {
                 transform.Translate(new Vector2(dir.x * speed * Time.deltaTime, 0));
             }
-            if(dir.y != 0)
+            if (dir.y != 0)
             {
                 transform.Translate(new Vector2(0, dir.y * speed * Time.deltaTime));
-            }
-            
-            if(direcao == 0)
-            {
-                ChangeSprite(sprite[0]);
-            }
-            else if(direcao == 1)
-            {
-                ChangeSprite(sprite[2]);
-                spriteRenderer.flipX = true;
-            }
-            else if(direcao == 2)
-            {
-                ChangeSprite(sprite[1]);
-            }
-            else
-            {
-                ChangeSprite(sprite[3]);
-                spriteRenderer.flipX = false;
-            }
+            }*/
+            animator.SetFloat("Horizontal", dir.x);
+            animator.SetFloat("Vertical", dir.y);
+            animator.SetFloat("Speed", dir.sqrMagnitude);
 
-            if(transform.position.y > 2.6) {
+            if (transform.position.y > 2.6)
+            {
                 do
                 {
                     direcao = Random.Range(0, 4);
@@ -208,10 +200,15 @@ public class MovementEnemyScript1 : MonoBehaviour
                 }
                 transform.position = new Vector2(transform.position.x, transform.position.y);
             }
-           
+
             //GetComponent<Rigidbody2D>().velocity = speed * dir;
         }
-        
+
+    }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + dir * speed * Time.fixedDeltaTime);
     }
 
     void Shoot()
@@ -226,10 +223,6 @@ public class MovementEnemyScript1 : MonoBehaviour
         }
     }
 
-    void ChangeSprite(Sprite updateSprite)
-    {
-        spriteRenderer.sprite = updateSprite;
-    }
 
     public void TakeDamage()
     {
@@ -308,7 +301,4 @@ public class MovementEnemyScript1 : MonoBehaviour
     {
         return Random.Range(-1, 2);
     }
-
-    
-    
 }

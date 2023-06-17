@@ -7,23 +7,23 @@ using TMPro;
 
 public class MovementEnemyScript : MonoBehaviour
 {
+    SetFaseScript s;
+
     public float speed;
-    public Vector2 screenLimit = new(4, 3);
-    int direction = -1;
-    Vector2 posicao;
+    Vector2 dir;
     public Image lifeBar;
     public TextMeshProUGUI lifeText;
     public int vida = 10;
     public int vidaMaxima = 10;
     public int damage = 1;
     public GameObject proxFase;
-    public SpriteRenderer spriteRenderer;
-    public Sprite[] sprite;
-    int vez = 0, ativaQuiz = 0, vidaAntiga, hit = 0;
+    int ativaQuiz = 0, vidaAntiga, hit = 0;
     public TextMeshProUGUI hitText;
     BoxCollider2D collide;
-    int direcao;
+    int direcao, vez = 0;
 
+    public Rigidbody2D rb;
+    //public Animator animator;
     public GameObject projectile, quiz;
     public float shootDistance = 1;
     public float shootSpeed = 300;
@@ -33,7 +33,27 @@ public class MovementEnemyScript : MonoBehaviour
 
     private void Start()
     {
-        
+        s = FindObjectOfType<SetFaseScript>();
+        direcao = Random.Range(0, 3);
+        switch (direcao)
+        {
+            case 0:
+                dir.y = -1;
+                dir.x = Eixo();
+                break;
+            case 1:
+                dir.x = -1;
+                dir.y = Eixo();
+                break;
+            case 2:
+                dir.y = 1;
+                dir.x = Eixo();
+                break;
+            case 3:
+                dir.x = 1;
+                dir.y = Eixo();
+                break;
+        }
         vida = vidaMaxima;
         UpdateUI();
         collide = gameObject.GetComponent<BoxCollider2D>();
@@ -45,15 +65,24 @@ public class MovementEnemyScript : MonoBehaviour
         shootTimer += Time.deltaTime;
         Movement(collide);
         Shoot();
-        if(vida == 0)
+
+        if (vida == 0)
         {
             Morrer();
+        }
+        if (vez == 0)
+        {
+            if (vida == 900)
+            {
+                AumentaDano();
+                vez++;
+            }
         }
         Quiz();
     }
     void UpdateUI()
     {
-        if(hit == 1) hitText.text = hit + " Hit";
+        if (hit == 1) hitText.text = hit + " Hit";
         else hitText.text = hit + " Hits";
         lifeBar.fillAmount = (float)vida / vidaMaxima;
         lifeText.text = vida + "/" + vidaMaxima;
@@ -61,31 +90,124 @@ public class MovementEnemyScript : MonoBehaviour
 
     void Movement(Collider2D obj)
     {
-        transform.Translate(new Vector2(0, direction * speed * Time.deltaTime));
-
-        if(obj.GetType() == typeof(BoxCollider2D))
+        if (obj.GetType() == typeof(BoxCollider2D))
         {
-            if (direction == -1 && vez == 0)
+            /*if (dir.x != 0)
             {
-                ChangeSprite(sprite[0]);
-                vez++;
+                transform.Translate(new Vector2(dir.x * speed * Time.deltaTime, 0));
             }
+            if (dir.y != 0)
+            {
+                transform.Translate(new Vector2(0, dir.y * speed * Time.deltaTime));
+            }*/
+
+
             if (transform.position.y > 2.6)
             {
-                direction *= -1;
-                ChangeSprite(sprite[0]);
+                do
+                {
+                    direcao = Random.Range(0, 4);
+                    //Debug.Log(direcao);
+                } while (direcao == 2);
+                switch (direcao)
+                {
+                    case 0:
+                        dir.y = -1;
+                        dir.x = Eixo();
+                        break;
+                    case 1:
+                        dir.x = -1;
+                        dir.y = Eixo();
+                        break;
+                    case 3:
+                        dir.x = 1;
+                        dir.y = Eixo();
+                        break;
+                }
                 transform.position = new Vector2(transform.position.x, transform.position.y);
             }
-            if (transform.position.y < -2)
+            if (transform.position.y < -1.5)
             {
-                direction *= -1;
-                ChangeSprite(sprite[1]);
+                do
+                {
+                    direcao = Random.Range(0, 4);
+                    //Debug.Log(direcao);
+                } while (direcao == 0);
+                switch (direcao)
+                {
+                    case 1:
+                        dir.x = -1;
+                        dir.y = Eixo();
+                        break;
+                    case 2:
+                        dir.y = 1;
+                        dir.x = Eixo();
+                        break;
+                    case 3:
+                        dir.x = 1;
+                        dir.y = Eixo();
+                        break;
+                }
+                transform.position = new Vector2(transform.position.x, transform.position.y);
+
+            }
+            if (transform.position.x < 1)
+            {
+                do
+                {
+                    direcao = Random.Range(0, 4);
+                    //Debug.Log(direcao);
+                } while (direcao == 1);
+
+                switch (direcao)
+                {
+                    case 0:
+                        dir.y = -1;
+                        dir.x = Eixo();
+                        break;
+                    case 2:
+                        dir.y = 1;
+                        dir.x = Eixo();
+                        break;
+                    case 3:
+                        dir.x = 1;
+                        dir.y = Eixo();
+                        break;
+                }
+                transform.position = new Vector2(transform.position.x, transform.position.y);
+            }
+            if (transform.position.x > 8)
+            {
+                do
+                {
+                    direcao = Random.Range(0, 4);
+                } while (direcao == 3);
+                switch (direcao)
+                {
+                    case 0:
+                        dir.y = -1;
+                        dir.x = Eixo();
+                        break;
+                    case 1:
+                        dir.x = -1;
+                        dir.y = Eixo();
+                        break;
+                    case 2:
+                        dir.y = 1;
+                        dir.x = Eixo();
+                        break;
+                }
                 transform.position = new Vector2(transform.position.x, transform.position.y);
             }
 
-            GetComponent<Rigidbody2D>().velocity = speed * posicao;
+            //GetComponent<Rigidbody2D>().velocity = speed * dir;
         }
-        
+
+    }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + dir * speed * Time.fixedDeltaTime);
     }
 
     void Shoot()
@@ -100,24 +222,20 @@ public class MovementEnemyScript : MonoBehaviour
         }
     }
 
-    void ChangeSprite(Sprite updateSprite)
-    {
-        spriteRenderer.sprite = updateSprite;
-    }
-
     public void TakeDamage()
     {
-        
+
         if (damage < 0)
             return;
         if (vida - damage > 0)
         {
             vida -= damage;
             hit++;
-        }   
+        }
         else
         {
             vida = 0;
+            s.MudarFase();
             Morrer();
         }
         UpdateUI();
@@ -130,12 +248,6 @@ public class MovementEnemyScript : MonoBehaviour
             Time.timeScale = 0;
             proxFase.SetActive(true);
         }
-        /*try
-        {
-            //FindObjectOfType<MovementPlayerScript>().AddScore(scoreBonus);
-        }
-        catch { }*/
-        
     }
 
     void Quiz()
@@ -181,8 +293,15 @@ public class MovementEnemyScript : MonoBehaviour
         {
             ativaQuiz = 0;
         }
-        
+    }
 
+    int Eixo()
+    {
+        return Random.Range(-1, 2);
+    }
 
+    public void AumentaDano()
+    {
+        damage += 10;
     }
 }

@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class PopUpMessage : MonoBehaviour
 {
-    public GameObject popUpBox;
     public Animator animator;
 
     public void PopUp()
     {
-        popUpBox.SetActive(true);
         animator.SetTrigger("pop");
+    }
+
+    public void ClosePopUp()
+    {
+        animator.SetTrigger("close");
     }
 }

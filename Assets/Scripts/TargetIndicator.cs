@@ -65,7 +65,7 @@ public class TargetIndicator : MonoBehaviour
                 transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             }
         }
-        else
+        else if(fase == 4)
         {
             var dir = fases[3].position - transform.position;
             if (dir.magnitude < esconder)

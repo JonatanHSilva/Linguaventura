@@ -529,6 +529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &200141374
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,6 +930,7 @@ GameObject:
   - component: {fileID: 405116081}
   - component: {fileID: 405116088}
   - component: {fileID: 405116089}
+  - component: {fileID: 405116090}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1040,12 +1042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   screenLimit: {x: -1, y: 5}
-  spriteRenderer: {fileID: 405116083}
-  sprite:
-  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
-  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
-  - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
-  - {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
+  animator: {fileID: 405116090}
   lifeBar: {fileID: 1347603467}
   lifeText: {fileID: 1702308128}
   vida: 5
@@ -1055,6 +1052,7 @@ MonoBehaviour:
   menu: {fileID: 950920555}
   quiz: {fileID: 86079042}
   hitText: {fileID: 1900691526}
+  rb: {fileID: 405116081}
   projectile: {fileID: 3323178654941843580, guid: 6d34db1f5fc8dca4d83357288660c2be,
     type: 3}
   shootDistance: 1
@@ -1102,6 +1100,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15, y: 0.15}
   m_EdgeRadius: 0
+--- !u!95 &405116090
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405116079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7216bfbb9aad6e644a18c2dcd17e1d41, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &518794662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,8 +1712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   screenLimit: {x: -4, y: 5}
-  spriteRenderer: {fileID: 0}
-  sprite: []
+  animator: {fileID: 0}
   lifeBar: {fileID: 0}
   lifeText: {fileID: 0}
   vida: 10
@@ -1704,6 +1722,7 @@ MonoBehaviour:
   menu: {fileID: 950920555}
   quiz: {fileID: 0}
   hitText: {fileID: 0}
+  rb: {fileID: 0}
   projectile: {fileID: 0}
   shootDistance: 1
   shootSpeed: 300
@@ -2358,7 +2377,7 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: fileName
-      value: Fase 2
+      value: Fase 3
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2368,37 +2387,49 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].pergunta
-      value: "No contexto de Vozes Verbais qual Voz \xE9 corresponde \xE0 seguinte
-        frase: \n\"William Shakespeare escreveu a pe\xE7a Sonho de uma noite de ver\xE3o.\""
+      value: "Em casos de concord\xE2ncia com sujeito simples, em express\xF5es como
+        \u201Cum grupo de\u201D, o verbo pode tanto concordar com o n\xFAcleo, quanto
+        concordar com o modificador do n\xFAcleo:\r\nEx.1: Um GRUPO de alunos PREFERE
+        teatro a cinema.\r\nEx.2: Um grupo de ALUNOS PREFEREM teatro a cinema.\n\nSelecione
+        a op\xE7\xE3o em que a concord\xE2ncia verbal est\xE1 INCORRETA:"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].pergunta
-      value: "Na Voz Passiva, o sujeito da ora\xE7\xE3o \xE9 paciente, ou seja, o
-        sujeito \xE9 quem sofre a a\xE7\xE3o verbal. \nCom isso, qual \xE9 a frase
-        que possui a Voz Verbal mencionada?"
+      value: "Em casos de concord\xE2ncia com sujeito composto posposto ao verbo,
+        ou o verbo concorda com o n\xFAcleo mais pr\xF3ximo ou fica no plural.\r\nEx.1:
+        DETERMINA o perfil do p\xFAblico a CLASSIFICA\xC7\xC3O et\xE1ria e o pre\xE7o
+        do espet\xE1culo.\r\nEx.2: DETERMINAM o perfil do p\xFAblico a CLASSIFICA\xC7\xC3O
+        et\xE1ria e o PRE\xC7O do espet\xE1culo.\r\n\nSelecione a op\xE7\xE3o em
+        que a concord\xE2ncia verbal est\xE1 INCORRETA:\r"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].pergunta
-      value: "A Voz Passiva pode se dividir em dois tipos, onde cada um deles possui
-        uma rela\xE7\xE3o e uma forma\xE7\xE3o de frase diferente. \nSelecione o
-        tipo que corresponde a Voz Passiva:"
+      value: "Em casos de concord\xE2ncia com o verbo ser, quando h\xE1 na ora\xE7\xE3o
+        uma palavra no plural, a concord\xE2ncia se faz com ela, esteja essa palavra
+        no sujeito ou no predicativo.\r\nEx.1: As FALAS do protagonista FORAM uma
+        surpresa.\r\nEx.2: Seu sonho ERAM os grandes TEATROS da Europa.\r\n\nSelecione
+        a op\xE7\xE3o em que a concord\xE2ncia verbal est\xE1 INCORRETA:\r"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].pergunta
-      value: 'Selecione qual Voz Verbal corresponde a seguinte frase:
-
-        "Ele
-        embrenhou-se num espinheiro[...]".'
+      value: "O verbo haver \xE9 impessoal quando significa existir e quando indica
+        tempo decorrido. Nesses casos, \xE9 empregado no singular.\r\nEx.1: Havia
+        j\xE1 dois anos que estavam em cartaz com a mesma com\xE9dia.\r\nEx.2: Havia,
+        na pe\xE7a, tr\xEAs momentos especialmente engra\xE7ados.\r\n\nSelecione
+        a op\xE7\xE3o em que a concord\xE2ncia verbal est\xE1 INCORRETA:\r"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].pergunta
-      value: "A Voz Reflexiva pode ser rec\xEDproca, ou seja, se h\xE1 mais de um
-        sujeito na ora\xE7\xE3o, todos recebem a a\xE7\xE3o ao mesmo tempo. \nAssim,
-        qual frase representa essa reciprocidade?"
+      value: "Verbo, seguido da part\xEDcula apassivadora \u201Cse\u201D, concorda
+        com o sujeito.\r\nEx.1: Divulgam-se as pe\xE7as em cartaz nos jornais.\r\nEnquanto
+        quando seguido no \xEDndice de indetermina\xE7\xE3o do sujeito \u201Cse\u201D,
+        o verbo \xE9 empregado no singular.\r\nEx.2: Precisa-se da autoriza\xE7\xE3o
+        do autor para alterar o texto da pe\xE7a.\r\n\nSelecione a op\xE7\xE3o em
+        que a concord\xE2ncia verbal est\xE1 INCORRETA:\r"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2428,102 +2459,102 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaCerta
-      value: Voz Ativa
+      value: "Os p\xE1ssaros no c\xE9u voa alto."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaCerta
-      value: "O feiti\xE7o foi quebrado por ele."
+      value: A menina e o menino correr.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaCerta
-      value: "Anal\xEDtica"
+      value: Ele ser cansado.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaCerta
-      value: Voz Reflexiva
+      value: "Ocorre v\xE1rias op\xE7\xF5es de escolha."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaCerta
-      value: "Os tr\xEAs uniram-se para moldar essa mentira."
+      value: "Os meninos corre atr\xE1s da bola."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaA
-      value: Voz Passiva
+      value: Uma alcateia de lobos uiva muito alto.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaB
-      value: Voz Inativa
+      value: Uma alcateia de lobos uivam muito alto.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaC
-      value: Voz Reflexiva
+      value: Um por cento dos estudantes apoiam a ideia de Maria.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaA
-      value: "Ele quebrou o feiti\xE7o."
+      value: Os alunos estudam para a prova.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaB
-      value: "Quebrou-se o feiti\xE7o."
+      value: O carro e a moto atravessam a rua.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaC
-      value: "Ele desenfeiti\xE7ou-se."
+      value: "As crian\xE7as brincam no parquinho."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaErradaA
-      value: Quantitativa
+      value: "Ele \xE9 um \xF3timo jogador de futebol."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaErradaB
-      value: Qualitativa
+      value: "As flores s\xE3o bonitas."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaErradaC
-      value: Reflexiva
+      value: "Os livros s\xE3o interessantes."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaErradaA
-      value: Voz Ativa
+      value: Choveu muito ontem.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaErradaB
-      value: Voz Passiva
+      value: "Faz muito calor no ver\xE3o."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaErradaC
-      value: Voz Inativa
+      value: Aconteceram muitos acidentes na estrada.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaErradaA
-      value: "Os feiti\xE7os foram quebrados por ele."
+      value: "O carro foi consertado pelo mec\xE2nico."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaErradaB
-      value: "William Shakespeare escreveu varias pe\xE7as."
+      value: "Os presentes foram entregues pelos funcion\xE1rios."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaErradaC
-      value: "Lisandro \xE9 amado por H\xE9rmia."
+      value: As casas foram pintadas pelos pintores.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2983,9 +3014,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551404154}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eb1ae3e395b532e4d8dbc08a412e4a7d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1021dafc7558c01429240421916d58b7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3082,18 +3113,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  screenLimit: {x: 4, y: 3}
   lifeBar: {fileID: 858805266}
   lifeText: {fileID: 1966941898}
   vida: 10
   vidaMaxima: 200
   damage: 20
   proxFase: {fileID: 1035958537}
-  spriteRenderer: {fileID: 1551404158}
-  sprite:
-  - {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
-  - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
   hitText: {fileID: 1947394699}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
   projectile: {fileID: 3323178654941843580, guid: e28a396aa1decaf4982634442858785a,
     type: 3}
   quiz: {fileID: 86079042}
@@ -3177,18 +3205,14 @@ MonoBehaviour:
   vidaMaxima: 200
   damage: 20
   proxFase: {fileID: 1035958537}
-  spriteRenderer: {fileID: 1551404158}
-  sprite:
-  - {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
-  - {fileID: 21300000, guid: 4fc82fadd0e1d4ed8a697be473d72842, type: 3}
-  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
-  - {fileID: 21300000, guid: 21ae12909dfa64464820da55fc494021, type: 3}
   hitText: {fileID: 1947394699}
+  rb: {fileID: 1551404156}
+  animator: {fileID: 1551404155}
   projectile: {fileID: 3323178654941843580, guid: 1fd5d3ba1471e5d4d87899808ed37dd3,
     type: 3}
   quiz: {fileID: 86079042}
   shootDistance: 1
-  shootSpeed: 380
+  shootSpeed: 350
   shootCoolDown: 0.5
 --- !u!114 &1551404164
 MonoBehaviour:

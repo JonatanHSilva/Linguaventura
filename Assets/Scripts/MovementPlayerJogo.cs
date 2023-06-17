@@ -5,49 +5,29 @@ using UnityEngine;
 public class MovementPlayerJogo : MonoBehaviour
 {
     public float speed;
-    public SpriteRenderer spriteRenderer;
-    public Sprite[] sprite;
     bool pause = false;
     public GameObject menu;
+    public Rigidbody2D rb;
+    public Animator animator;
+    Vector2 direction;
     
 
     private void Start()
     {
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         Time.timeScale = 1;
     }
 
 
     private void Update()
     {
-        Vector2 direction = Vector2.zero;
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            direction.x = -1;
-            spriteRenderer.flipX = true;
-            ChangeSprite(sprite[0]);
-        }
-        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            direction.x = 1;
-            spriteRenderer.flipX = false;
-            ChangeSprite(sprite[1]);
-        }
-
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            direction.y = 1;
-            ChangeSprite(sprite[2]);
-        }
-        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            direction.y = -1;
-            ChangeSprite(sprite[3]);
-        }
-
+        direction.x = Input.GetAxisRaw("Horizontal");
+        direction.y = Input.GetAxisRaw("Vertical");
         direction.Normalize();
 
-        GetComponent<Rigidbody2D>().velocity = speed * direction;
+        animator.SetFloat("Horizontal", direction.x);
+        animator.SetFloat("Vertical", direction.y);
+        animator.SetFloat("Speed", direction.sqrMagnitude);
+
 
         if (Input.GetButtonDown("Cancel"))
         {
@@ -65,9 +45,9 @@ public class MovementPlayerJogo : MonoBehaviour
         }
     }
 
-    void ChangeSprite(Sprite updateSprite)
+    private void FixedUpdate()
     {
-        spriteRenderer.sprite = updateSprite;
+        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
     }
 }
 

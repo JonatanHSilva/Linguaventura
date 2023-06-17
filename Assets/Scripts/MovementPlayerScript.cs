@@ -9,8 +9,7 @@ public class MovementPlayerScript : MonoBehaviour
 {
     public float speed;
     public Vector2 screenLimit = new(-4, 5);
-    public SpriteRenderer spriteRenderer;
-    public Sprite[] sprite;
+    public Animator animator;
     public Image lifeBar;
     public TextMeshProUGUI lifeText;
     public int vida = 10;
@@ -21,8 +20,10 @@ public class MovementPlayerScript : MonoBehaviour
     public GameObject quiz;
     public TextMeshProUGUI hitText;
     int hit = 0;
-    BoxCollider2D collide;
 
+    Vector2 direction;
+    public Rigidbody2D rb;
+    BoxCollider2D collide;
     public GameObject projectile;
     public float shootDistance = 1;
     public float shootSpeed = 300;
@@ -33,7 +34,6 @@ public class MovementPlayerScript : MonoBehaviour
 
     private void Start()
     {
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         collide = gameObject.GetComponent<BoxCollider2D>();
         vida = vidaMaxima;
         UpdateUI();
@@ -66,6 +66,11 @@ public class MovementPlayerScript : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+    }
+
     void UpdateUI()
     {
         if (hit == 1) hitText.text = hit + " Hit";
@@ -77,36 +82,15 @@ public class MovementPlayerScript : MonoBehaviour
 
     void Movement(Collider2D obj)
     {
-        Vector2 dir = Vector2.zero;
         if(obj.GetType() == typeof(BoxCollider2D))
         {
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            {
-                dir.x = -1;
-                spriteRenderer.flipX = true;
-                ChangeSprite(sprite[0]);
-            }
-            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            {
-                if (transform.position.x < screenLimit.x) dir.x = 1;
-                spriteRenderer.flipX = false;
-                ChangeSprite(sprite[1]);
-            }
+            direction.x = Input.GetAxisRaw("Horizontal");
+            direction.y = Input.GetAxisRaw("Vertical");
+            direction.Normalize();
 
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-            {
-                dir.y = 1;
-                ChangeSprite(sprite[2]);
-            }
-            else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-            {
-                dir.y = -1;
-                ChangeSprite(sprite[3]);
-            }
-
-            dir.Normalize();
-
-            GetComponent<Rigidbody2D>().velocity = speed * dir;
+            animator.SetFloat("Horizontal", direction.x);
+            animator.SetFloat("Vertical", direction.y);
+            animator.SetFloat("Speed", direction.sqrMagnitude);
         }
     }
 
@@ -140,11 +124,6 @@ public class MovementPlayerScript : MonoBehaviour
         UpdateUI();
     }
 
-
-    void ChangeSprite(Sprite updateSprite)
-    {
-        spriteRenderer.sprite = updateSprite;
-    }
 
     void Morrer()
     {
