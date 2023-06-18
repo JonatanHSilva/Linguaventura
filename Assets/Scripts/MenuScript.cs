@@ -7,9 +7,11 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
     SetFaseScript s;
+    MovementPlayerScript p;
     // Start is called before the first frame update
     void Start()
     {
+        p = FindObjectOfType<MovementPlayerScript>();
         s = FindObjectOfType<SetFaseScript>();
     }
 
@@ -44,6 +46,54 @@ public class MenuScript : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void Fase1()
+    {
+        StartCoroutine(Level1());
+        Time.timeScale = 1;
+    }
+
+    public void Fase2()
+    {
+        StartCoroutine(Level2());
+        Time.timeScale = 1;
+    }
+
+    public void Fase3()
+    {
+        StartCoroutine(Level3());
+        Time.timeScale = 1;
+    }
+
+    public void Fase4()
+    {
+        StartCoroutine(Level4());
+        Time.timeScale = 1;
+    }
+
+    IEnumerator Level1()
+    {
+        yield return new WaitForSeconds(.2f);
+        SceneManager.LoadScene("Level1");
+    }
+
+    IEnumerator Level2()
+    {
+        yield return new WaitForSeconds(.2f);
+        SceneManager.LoadScene("Level2");
+    }
+
+    IEnumerator Level3()
+    {
+        yield return new WaitForSeconds(.2f);
+        SceneManager.LoadScene("Level3");
+    }
+    IEnumerator Level4()
+    {
+        yield return new WaitForSeconds(.2f);
+        SceneManager.LoadScene("Level4");
+    }
+
+
     IEnumerator Jogo()
     {
         yield return new WaitForSecondsRealtime(.5f);
@@ -63,5 +113,10 @@ public class MenuScript : MonoBehaviour
         Application.Quit();
     }
 
-    
+    public void FecharPause()
+    {
+        p.menu.SetActive(false);
+        p.SetPause();
+        Time.timeScale = 1;
+    }
 }

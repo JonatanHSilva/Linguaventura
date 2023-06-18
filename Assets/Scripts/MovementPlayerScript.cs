@@ -141,4 +141,9 @@ public class MovementPlayerScript : MonoBehaviour
         perdeu.SetActive(true);
         //transform.position = new Vector2(transform.position.x, transform.position.y);
     }
+
+    public void SetPause()
+    {
+        pause = !pause;
+    }
 }
