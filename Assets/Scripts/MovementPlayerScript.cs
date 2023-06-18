@@ -98,6 +98,7 @@ public class MovementPlayerScript : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && shootTimer >= shootCD)
         {
+            animator.SetTrigger("Attack");
             GameObject shoot = Instantiate(projectile);
             shoot.transform.position = transform.position + Vector3.right * shootDistance;
             shoot.transform.up = shootDirection.normalized;

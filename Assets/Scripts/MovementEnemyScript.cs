@@ -23,7 +23,7 @@ public class MovementEnemyScript : MonoBehaviour
     int direcao, vez = 0;
 
     public Rigidbody2D rb;
-    //public Animator animator;
+    public Animator animator;
     public GameObject projectile, quiz;
     public float shootDistance = 1;
     public float shootSpeed = 300;
@@ -214,6 +214,7 @@ public class MovementEnemyScript : MonoBehaviour
     {
         if (shootTimer > shootCoolDown)
         {
+            animator.SetTrigger("Attack");
             GameObject shoot = Instantiate(projectile);
             shoot.transform.position = transform.position + Vector3.left * shootDistance;
             shoot.transform.up = shootDirection.normalized;
