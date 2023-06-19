@@ -218,7 +218,6 @@ public class MovementEnemyScript : MonoBehaviour
             animator.SetTrigger("Attack");
             GameObject shoot = Instantiate(projectile);
             shoot.transform.position = transform.position + Vector3.left * shootDistance;
-            shoot.transform.up = shootDirection.normalized;
             shoot.GetComponent<Rigidbody2D>().AddForce(shootDirection.normalized * shootSpeed);
             shootTimer = 0;
         }

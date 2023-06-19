@@ -1038,7 +1038,7 @@ MonoBehaviour:
   quiz: {fileID: 86079042}
   hitText: {fileID: 1900691526}
   rb: {fileID: 405116081}
-  projectile: {fileID: 3323178654941843580, guid: 6d34db1f5fc8dca4d83357288660c2be,
+  projectile: {fileID: 3323178654941843580, guid: f539ed2935e26b24bbed650b9b191383,
     type: 3}
   shootDistance: 1
   shootSpeed: 300
@@ -3070,11 +3070,11 @@ MonoBehaviour:
   hitText: {fileID: 1947394699}
   rb: {fileID: 1551404156}
   animator: {fileID: 1551404165}
-  projectile: {fileID: 3323178654941843580, guid: e28a396aa1decaf4982634442858785a,
+  projectile: {fileID: 3323178654941843580, guid: 7621de0777464dc43b2237c2d7854ca4,
     type: 3}
   quiz: {fileID: 86079042}
   shootDistance: 1
-  shootSpeed: 400
+  shootSpeed: 500
   shootCoolDown: 3
 --- !u!4 &1551404160
 Transform:

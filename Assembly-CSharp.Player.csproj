@@ -114,6 +114,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Scripts\BurnScript.cs" />
+    <Compile Include="Assets\Scripts\GlowRuneScript.cs" />
+    <Compile Include="Assets\Scripts\GlowRuneScript1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
