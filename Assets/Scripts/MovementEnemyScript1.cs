@@ -33,6 +33,7 @@ public class MovementEnemyScript1 : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         s = FindObjectOfType<SetFaseScript>();
         direcao = Random.Range(0, 4);
         switch (direcao)

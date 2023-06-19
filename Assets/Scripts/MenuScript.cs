@@ -29,67 +29,60 @@ public class MenuScript : MonoBehaviour
     public void Jogar()
     {
         SceneManager.LoadScene("Jogo");
-        //StartCoroutine(Jogo());
-        Time.timeScale = 1; 
+        StartCoroutine(Jogo());
     }
 
     public void Fechar()
     {
         s.Reinicio();
-        Time.timeScale = 1;
         StartCoroutine(WaitFechar());
     }
 
     public void VoltarMenu()
     {
         StartCoroutine(VoltarAoMenu());
-        Time.timeScale = 1;
     }
 
     public void Fase1()
     {
         StartCoroutine(Level1());
-        Time.timeScale = 1;
     }
 
     public void Fase2()
     {
         StartCoroutine(Level2());
-        Time.timeScale = 1;
     }
 
     public void Fase3()
     {
         StartCoroutine(Level3());
-        Time.timeScale = 1;
     }
 
     public void Fase4()
     {
         StartCoroutine(Level4());
-        Time.timeScale = 1;
     }
 
     IEnumerator Level1()
     {
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSecondsRealtime(.5f);
         SceneManager.LoadScene("Level1");
     }
 
     IEnumerator Level2()
     {
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSecondsRealtime(.5f);
         SceneManager.LoadScene("Level2");
     }
 
     IEnumerator Level3()
     {
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSecondsRealtime(.5f);
         SceneManager.LoadScene("Level3");
     }
     IEnumerator Level4()
     {
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSecondsRealtime(.5f);
         SceneManager.LoadScene("Level4");
     }
 
@@ -103,13 +96,13 @@ public class MenuScript : MonoBehaviour
 
     IEnumerator VoltarAoMenu()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSecondsRealtime(.5f);
         SceneManager.LoadScene("Menu");
     }
 
     IEnumerator WaitFechar()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSecondsRealtime(.5f);
         Application.Quit();
     }
 

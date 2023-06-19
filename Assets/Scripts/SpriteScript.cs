@@ -110,47 +110,43 @@ public class SpriteScript : MonoBehaviour
     public void Fase1()
     {
         StartCoroutine(Level1());
-        Time.timeScale = 1;
     }
 
     public void Fase2()
     {
         StartCoroutine(Level2());
-        Time.timeScale = 1;
     }
 
     public void Fase3()
     {
         StartCoroutine(Level3());
-        Time.timeScale = 1;
     }
 
     public void Fase4()
     {
         StartCoroutine(Level4());
-        Time.timeScale = 1;
     }
 
     IEnumerator Level1()
     {
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSecondsRealtime(.5f);
         SceneManager.LoadScene("Level1");
     }
 
     IEnumerator Level2()
     {
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSecondsRealtime(.5f);
         SceneManager.LoadScene("Level2");
     }
 
     IEnumerator Level3()
     {
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSecondsRealtime(.5f);
         SceneManager.LoadScene("Level3");
     }
     IEnumerator Level4()
     {
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSecondsRealtime(.5f);
         SceneManager.LoadScene("Level4");
     }
 

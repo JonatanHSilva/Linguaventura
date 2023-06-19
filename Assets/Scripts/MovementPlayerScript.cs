@@ -88,6 +88,11 @@ public class MovementPlayerScript : MonoBehaviour
             direction.y = Input.GetAxisRaw("Vertical");
             direction.Normalize();
 
+            if (transform.position.x > screenLimit.x)
+            {
+                transform.position = new Vector3(screenLimit.x, transform.position.y);
+            }
+
             animator.SetFloat("Horizontal", direction.x);
             animator.SetFloat("Vertical", direction.y);
             animator.SetFloat("Speed", direction.sqrMagnitude);
@@ -129,18 +134,8 @@ public class MovementPlayerScript : MonoBehaviour
     void Morrer()
     {
         morto = true;
-        //vida = vidaMaxima;
         Time.timeScale = 0;
-        //int oldScore = PlayerPrefs.GetInt("Score");
-        //int newScore = (int)gameTimer + score;
-        /*if (newScore >= oldScore)
-        {
-            PlayerPrefs.SetInt("Score", newScore);
-        }
-        if (newScoreText != null)
-            newScoreText.text = "Sua Pontuação: " + newScore.ToString() + "\nPontuação Máxima: " + PlayerPrefs.GetInt("Score");*/
         perdeu.SetActive(true);
-        //transform.position = new Vector2(transform.position.x, transform.position.y);
     }
 
     public void SetPause()
