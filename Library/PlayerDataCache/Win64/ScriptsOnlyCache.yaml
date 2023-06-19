@@ -47,8 +47,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -209,30 +211,18 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: SelecionarFaseQuiz
     methodName: Quiz4
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
+  - assembly: UnityEngine.AnimationModule
+    fullTypeName: UnityEngine.Animator
+    methodName: SetTrigger
   - assembly: Assembly-CSharp
     fullTypeName: MenuScript
     methodName: Fechar
   - assembly: Assembly-CSharp
-    fullTypeName: SpriteScript
-    methodName: Fase3
-  - assembly: Assembly-CSharp
     fullTypeName: MenuScript
     methodName: VoltarMenu
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: SpriteScript
-    methodName: Fase2
   - assembly: Assembly-CSharp
     fullTypeName: SpriteScript
     methodName: Fase1
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: QuisButtonsScript
     methodName: Clicked
@@ -246,7 +236,7 @@ ScriptsOnlyBuild:
     fullTypeName: MenuScript
     methodName: Jogar
   - assembly: Assembly-CSharp
-    fullTypeName: SpriteScript
+    fullTypeName: MenuScript
     methodName: Fase1
   - assembly: Assembly-CSharp
     fullTypeName: MenuScript
@@ -258,6 +248,9 @@ ScriptsOnlyBuild:
     fullTypeName: MenuScript
     methodName: VoltarMenu
   - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
+    methodName: FecharPause
+  - assembly: Assembly-CSharp
     fullTypeName: QuisButtonsScript
     methodName: Clicked
   - assembly: Assembly-CSharp
@@ -270,7 +263,7 @@ ScriptsOnlyBuild:
     fullTypeName: MenuScript
     methodName: Jogar
   - assembly: Assembly-CSharp
-    fullTypeName: SpriteScript
+    fullTypeName: MenuScript
     methodName: Fase2
   - assembly: Assembly-CSharp
     fullTypeName: MenuScript
@@ -282,6 +275,9 @@ ScriptsOnlyBuild:
     fullTypeName: MenuScript
     methodName: VoltarMenu
   - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
+    methodName: FecharPause
+  - assembly: Assembly-CSharp
     fullTypeName: QuisButtonsScript
     methodName: Clicked
   - assembly: Assembly-CSharp
@@ -294,7 +290,7 @@ ScriptsOnlyBuild:
     fullTypeName: MenuScript
     methodName: Jogar
   - assembly: Assembly-CSharp
-    fullTypeName: SpriteScript
+    fullTypeName: MenuScript
     methodName: Fase3
   - assembly: Assembly-CSharp
     fullTypeName: MenuScript
@@ -305,6 +301,36 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: MenuScript
     methodName: VoltarMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
+    methodName: FecharPause
+  - assembly: Assembly-CSharp
+    fullTypeName: QuisButtonsScript
+    methodName: Clicked
+  - assembly: Assembly-CSharp
+    fullTypeName: QuisButtonsScript
+    methodName: Clicked
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
+    methodName: VoltarMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
+    methodName: Jogar
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
+    methodName: Fase4
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
+    methodName: Jogar
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
+    methodName: Jogar
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
+    methodName: VoltarMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
+    methodName: FecharPause
   sceneClasses:
     Assets/Scenes/Jogo.unity:
     - Class: 1
@@ -471,8 +497,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4424}
     - Class: 114
-      Script: {instanceID: 4552}
-    - Class: 114
       Script: {instanceID: 5902}
     - Class: 115
       Script: {instanceID: 0}
@@ -575,8 +599,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4408}
     - Class: 114
       Script: {instanceID: 4424}
-    - Class: 114
-      Script: {instanceID: 4552}
     - Class: 114
       Script: {instanceID: 5902}
     - Class: 115
@@ -681,7 +703,108 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4424}
     - Class: 114
-      Script: {instanceID: 4552}
+      Script: {instanceID: 5902}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/Level4.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 670}
+    - Class: 114
+      Script: {instanceID: 1560}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 1628}
+    - Class: 114
+      Script: {instanceID: 1700}
+    - Class: 114
+      Script: {instanceID: 1840}
+    - Class: 114
+      Script: {instanceID: 1938}
+    - Class: 114
+      Script: {instanceID: 2344}
+    - Class: 114
+      Script: {instanceID: 2714}
+    - Class: 114
+      Script: {instanceID: 2832}
+    - Class: 114
+      Script: {instanceID: 2922}
+    - Class: 114
+      Script: {instanceID: 2970}
+    - Class: 114
+      Script: {instanceID: 3160}
+    - Class: 114
+      Script: {instanceID: 3414}
+    - Class: 114
+      Script: {instanceID: 3584}
+    - Class: 114
+      Script: {instanceID: 3942}
+    - Class: 114
+      Script: {instanceID: 4028}
+    - Class: 114
+      Script: {instanceID: 4408}
+    - Class: 114
+      Script: {instanceID: 4424}
     - Class: 114
       Script: {instanceID: 5902}
     - Class: 115
@@ -1310,7 +1433,7 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: c031782134307536246a4099e0ca4bdb
+      Hash: cb6a2069e158c1c4e648d9516cb38117
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovementEnemyScript
@@ -1328,7 +1451,7 @@ ScriptsOnlyBuild:
     className: TextMeshSpawner
   - hash:
       serializedVersion: 2
-      Hash: b1ce7377a663ffd6b7151461f136f450
+      Hash: cb6a2069e158c1c4e648d9516cb38117
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovementEnemyScript1
@@ -1436,7 +1559,7 @@ ScriptsOnlyBuild:
     className: Benchmark03
   - hash:
       serializedVersion: 2
-      Hash: 50db86db3e8536035f7d1091c69072c3
+      Hash: 69a759f8c017226639efb928d4ac26d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovementPlayerJogo
@@ -1508,7 +1631,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
-      Hash: 6a6aa7ae09a9d5c691db390bd825a044
+      Hash: 2183600124d472d3efa14bae812dc425
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovementPlayerScript
@@ -1640,7 +1763,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: c032fbed93c4366adb999ec49a567eef
+      Hash: 30f3213a6e218a461fa00e428f22d3eb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PopUpMessage
@@ -1706,7 +1829,7 @@ ScriptsOnlyBuild:
     className: EnvMapAnimator
   - hash:
       serializedVersion: 2
-      Hash: d0adc65b6f54d204e5a5dc174eb9a803
+      Hash: 26a5a67fdae7ee0eba243946236553e0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpriteScript
@@ -1969,6 +2092,7 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level3.unity
+  - Assets/Scenes/Level4.unity
   - Assets/Scenes/Set Quiz Level1.unity
   - Assets/Scenes/Set Quiz Level2.unity
   - Assets/Scenes/Set Quiz Level3.unity

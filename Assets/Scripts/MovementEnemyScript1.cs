@@ -215,6 +215,7 @@ public class MovementEnemyScript1 : MonoBehaviour
     {
         if (shootTimer > shootCoolDown)
         {
+            animator.SetTrigger("Attack");
             GameObject shoot = Instantiate(projectile);
             shoot.transform.position = transform.position + Vector3.left * shootDistance;
             shoot.transform.up = shootDirection.normalized;
