@@ -6,15 +6,15 @@ public class ConceitointeraçãoScript : MonoBehaviour
 {
     public Animator animator;
     public GameObject janela, bauAberto, bauFechado;
-    public float time;
-    int vez = 0, fechou = 0;
+    public float timeFechar;
+    int vez = 0, fechou = 0, time = 0;
 
     void Update()
     {
         if(fechou == 1)
         {
             time += Time.deltaTime;
-            if(time > 3)
+            if(time > timeFechar)
             {
                 janela.SetActive(false);
             }
