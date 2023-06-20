@@ -362,6 +362,7 @@
 "Assets/Cainos/Pixel Art Top Down - Basic/Script/SpriteColorAnimation.cs"
 "Assets/Cainos/Pixel Art Top Down - Basic/Script/TopDownCharacterController.cs"
 "Assets/Scripts/BurnScript.cs"
+"Assets/Scripts/ConceitointeraçãoScript.cs"
 "Assets/Scripts/GlowRuneScript.cs"
 "Assets/Scripts/GlowRuneScript1.cs"
 "Assets/Scripts/MenuScript.cs"
