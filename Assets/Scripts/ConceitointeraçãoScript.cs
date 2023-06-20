@@ -7,7 +7,8 @@ public class ConceitointeraçãoScript : MonoBehaviour
     public Animator animator;
     public GameObject janela, bauAberto, bauFechado;
     public float timeFechar;
-    int vez = 0, fechou = 0, time = 0;
+    int vez = 0, fechou = 0;
+    float time = 0;
 
     void Update()
     {
