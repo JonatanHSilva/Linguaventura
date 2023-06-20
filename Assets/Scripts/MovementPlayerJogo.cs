@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MovementPlayerJogo : MonoBehaviour
 {
@@ -10,11 +11,16 @@ public class MovementPlayerJogo : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     Vector2 direction;
+    SetNomeJogador s;
+
+    public TextMeshProUGUI nome;
     
 
     private void Start()
     {
+        s = FindObjectOfType<SetNomeJogador>();
         Time.timeScale = 1;
+        nome.text = s.GetNome();
     }
 
 

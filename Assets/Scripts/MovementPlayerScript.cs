@@ -11,7 +11,7 @@ public class MovementPlayerScript : MonoBehaviour
     public Vector2 screenLimit = new(-4, 5);
     public Animator animator;
     public Image lifeBar;
-    public TextMeshProUGUI lifeText;
+    public TextMeshProUGUI lifeText, nome;
     public int vida = 10;
     public int vidaMaxima = 10;
     public int damage = 1;
@@ -20,6 +20,7 @@ public class MovementPlayerScript : MonoBehaviour
     public GameObject quiz;
     public TextMeshProUGUI hitText;
     int hit = 0;
+    SetNomeJogador s;
 
     Vector2 direction;
     public Rigidbody2D rb;
@@ -34,7 +35,9 @@ public class MovementPlayerScript : MonoBehaviour
 
     private void Start()
     {
+        s = FindObjectOfType<SetNomeJogador>();
         collide = gameObject.GetComponent<BoxCollider2D>();
+        nome.text = s.GetNome();
         vida = vidaMaxima;
         UpdateUI();
     }
@@ -92,6 +95,10 @@ public class MovementPlayerScript : MonoBehaviour
             {
                 transform.position = new Vector3(screenLimit.x, transform.position.y);
             }
+            if(transform.position.y > 2.5)
+            {
+                transform.position = new Vector3(transform.position.x, 2.5f);
+            }
 
             animator.SetFloat("Horizontal", direction.x);
             animator.SetFloat("Vertical", direction.y);
@@ -132,9 +139,12 @@ public class MovementPlayerScript : MonoBehaviour
 
     void Morrer()
     {
-        morto = true;
-        Time.timeScale = 0;
-        perdeu.SetActive(true);
+        if (!quiz.activeSelf)
+        {
+            morto = true;
+            Time.timeScale = 0;
+            perdeu.SetActive(true);
+        }
     }
 
     public void SetPause()

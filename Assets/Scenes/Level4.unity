@@ -1030,6 +1030,7 @@ MonoBehaviour:
   animator: {fileID: 405116090}
   lifeBar: {fileID: 1347603467}
   lifeText: {fileID: 1702308128}
+  nome: {fileID: 1179255910}
   vida: 5
   vidaMaxima: 200
   damage: 40
@@ -1115,6 +1116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 518794663}
+  - component: {fileID: 518794664}
   m_Layer: 0
   m_Name: SCENE
   m_TagString: Untagged
@@ -1138,6 +1140,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &518794664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518794662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd9698ae06f9d3469d8bc418adc107b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: []
+  n:
+    nome: 
+  nomePlayer: {fileID: 0}
 --- !u!1 &527074828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,7 +1501,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sair da Fase 1
+  m_Text: Sair da Fase 4
 --- !u!222 &600455276
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2586,8 +2604,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7335788984167448227, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788984167448227, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
       propertyPath: m_Color.a
       value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788984167448227, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788984167448227, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.3647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788984167448227, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7335788984432277177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -3085,7 +3123,7 @@ Transform:
   m_GameObject: {fileID: 1551404154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1545163193}
@@ -3105,9 +3143,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.02}
+  m_Offset: {x: 0, y: -0.03}
   serializedVersion: 2
-  m_Radius: 0.135
+  m_Radius: 0.2
 --- !u!61 &1551404162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3115,13 +3153,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551404154}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.001977921, y: -0.17}
+  m_Offset: {x: 0, y: -0.03}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3132,7 +3170,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.13}
+  m_Size: {x: 0.25, y: 0.45}
   m_EdgeRadius: 0
 --- !u!114 &1551404163
 MonoBehaviour:
@@ -3153,6 +3191,7 @@ MonoBehaviour:
   vidaMaxima: 1000
   damage: 10
   proxFase: {fileID: 1035958537}
+  tutorial: {fileID: 0}
   hitText: {fileID: 1947394699}
   rb: {fileID: 0}
   animator: {fileID: 0}

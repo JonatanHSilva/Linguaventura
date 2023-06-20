@@ -1,485 +1,427 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1687144688248394, "dur": 470363, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1687144688248613, "dur": 12284, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1687144688260902, "dur": 69572, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1687144688330537, "dur": 294507, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1687144688625053, "dur": 81559, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1687144688706615, "dur": 12140, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1687144688719989, "dur": 40, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1687225658532021, "dur": 83703, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1687225658532220, "dur": 3952, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1687225658536177, "dur": 69275, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1687225658605454, "dur": 10251, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1687225658616533, "dur": 18, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1687144688299488, "dur":1659, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688301155, "dur":331, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1687144688301535, "dur":25, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1687144688301561, "dur":322, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1687144688301904, "dur":549, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688302453, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688308768, "dur":168, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688308936, "dur":22, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688308958, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688308963, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688308973, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688308975, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688308987, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688308989, "dur":17, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688309006, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688309008, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688309012, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688309013, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688309017, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688309019, "dur":20, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688309039, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688309040, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688309045, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688309045, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688309060, "dur":1700, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1687144688304025, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688304026, "dur":4725, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688302927, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688302927, "dur":5824, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688303388, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688303388, "dur":5380, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688302504, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688302504, "dur":6243, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688302724, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688302724, "dur":6103, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688303182, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688303182, "dur":5646, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688303608, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688303609, "dur":5217, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688303809, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688303810, "dur":5019, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688312222, "dur":444, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1687144688720212, "dur": 480, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
-{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 35942, "tid": 1, "ts": 1687144688497847, "dur": 116954, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1687144688498683, "dur": 44705, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1687144688595873, "dur": 8435, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1687144688604311, "dur": 10480, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1687144688604902, "dur": 8754, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1687144688618866, "dur": 1108, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1687144688618215, "dur": 1780, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1687144688720804, "dur": 290, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
-{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1687144688664185, "dur":1156, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688665344, "dur":99, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1687144688665474, "dur":19, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1687144688665493, "dur":274, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1687144688665797, "dur":466, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688666263, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702062, "dur":212, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702274, "dur":45, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702319, "dur":13, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702332, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702340, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702341, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702346, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702347, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702351, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702353, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702358, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702360, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702364, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702365, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702373, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702374, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702379, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702397, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688702416, "dur":2637, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1687144688667386, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688667386, "dur":5844, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688673231, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1687144688673420, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688673518, "dur":588, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1687144688674106, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688674198, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":1, "ts":1687144688674318, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688674380, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688674424, "dur":1095, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688675521, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688675587, "dur":390, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688675978, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688676041, "dur":327, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688676368, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688676431, "dur":749, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688677181, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688677242, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688677309, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688677343, "dur":762, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688678106, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688678169, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688678231, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688678268, "dur":421, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688678690, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688678840, "dur":464, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688679305, "dur":379, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688679684, "dur":365, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688680050, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688680090, "dur":326, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688680417, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688680468, "dur":473, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688680942, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688681001, "dur":518, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688681520, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":1, "ts":1687144688681565, "dur":416, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688681982, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets6.assets" }}
-,{ "pid":12345, "tid":1, "ts":1687144688682054, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688686424, "dur":4108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets6.assets" }}
-,{ "pid":12345, "tid":1, "ts":1687144688690597, "dur":246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":1, "ts":1687144688690844, "dur":197, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688691043, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":1, "ts":1687144688691155, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688691159, "dur":6257, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":1, "ts":1687144688697492, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level1" }}
-,{ "pid":12345, "tid":1, "ts":1687144688697572, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687144688697578, "dur":3293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level1" }}
-,{ "pid":12345, "tid":1, "ts":1687144688700922, "dur":1148, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688668500, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688668501, "dur":4693, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688673195, "dur":207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1687144688673402, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688673485, "dur":247, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1687144688673732, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688673797, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":2, "ts":1687144688673918, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688673997, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688674112, "dur":233, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688674347, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688674427, "dur":530, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688674958, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688675056, "dur":764, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688675821, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688675874, "dur":310, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688676185, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688676248, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688676313, "dur":462, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688676775, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688676855, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688676885, "dur":425, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688677311, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688677361, "dur":752, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688678115, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688678193, "dur":422, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688678616, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688678679, "dur":395, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688679075, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688679118, "dur":332, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688679451, "dur":839, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688680290, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688680361, "dur":213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688680575, "dur":252, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688680828, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688680889, "dur":373, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688681263, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688681321, "dur":322, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688681644, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":2, "ts":1687144688681683, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688681753, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets9.assets" }}
-,{ "pid":12345, "tid":2, "ts":1687144688681804, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688683164, "dur":2758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets9.assets" }}
-,{ "pid":12345, "tid":2, "ts":1687144688685969, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets5.assets" }}
-,{ "pid":12345, "tid":2, "ts":1687144688686054, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688686058, "dur":3156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets5.assets" }}
-,{ "pid":12345, "tid":2, "ts":1687144688689265, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1687144688689318, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688689324, "dur":5409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1687144688694823, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level6" }}
-,{ "pid":12345, "tid":2, "ts":1687144688694899, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688694907, "dur":3763, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level6" }}
-,{ "pid":12345, "tid":2, "ts":1687144688698741, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":2, "ts":1687144688698816, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687144688698821, "dur":2446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":2, "ts":1687144688701316, "dur":753, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688667594, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688667594, "dur":5601, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688673196, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1687144688673389, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688673483, "dur":365, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1687144688673849, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688673951, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":3, "ts":1687144688674062, "dur":290, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688674352, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688674421, "dur":1123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688675545, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688675615, "dur":750, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688676366, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688676432, "dur":946, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688677379, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688677436, "dur":561, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688677998, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688678061, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688678145, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688678199, "dur":339, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688678539, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688678592, "dur":580, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688679173, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688679223, "dur":555, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688679779, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.Unsafe.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688679828, "dur":365, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688680194, "dur":251, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688680445, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688680521, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688680578, "dur":290, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688680869, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688680928, "dur":423, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688681352, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":3, "ts":1687144688681415, "dur":465, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688681881, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets6.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1687144688681931, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688685025, "dur":2193, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets6.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1687144688687299, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1687144688687360, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688687365, "dur":3726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1687144688691170, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1687144688691268, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688691273, "dur":3507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1687144688694856, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level5" }}
-,{ "pid":12345, "tid":3, "ts":1687144688694937, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688694942, "dur":3501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level5" }}
-,{ "pid":12345, "tid":3, "ts":1687144688698511, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1687144688698601, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687144688698606, "dur":2526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1687144688701180, "dur":855, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688667322, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688667323, "dur":5910, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688673234, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1687144688673426, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688673514, "dur":656, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1687144688674170, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688674247, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":4, "ts":1687144688674350, "dur":321, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688674672, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688674733, "dur":775, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688675509, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688675581, "dur":336, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688675919, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688675983, "dur":380, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688676365, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688676431, "dur":712, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688677144, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688677214, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688677297, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688677354, "dur":839, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688678194, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688678259, "dur":365, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688678625, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688678699, "dur":485, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688679184, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688679236, "dur":631, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688679868, "dur":512, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688680381, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688680448, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688680499, "dur":417, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688680917, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688680972, "dur":561, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688681534, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688681594, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688681665, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":4, "ts":1687144688681699, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688681750, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1687144688681792, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688682690, "dur":3332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1687144688686081, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets4.assets" }}
-,{ "pid":12345, "tid":4, "ts":1687144688686136, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688686140, "dur":4204, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets4.assets" }}
-,{ "pid":12345, "tid":4, "ts":1687144688690403, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1687144688690500, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687144688690505, "dur":8586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1687144688699283, "dur":2775, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688668043, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688668043, "dur":5188, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688673231, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1687144688673385, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688673464, "dur":417, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":5, "ts":1687144688673881, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688673987, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688674102, "dur":252, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688674354, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688674404, "dur":1145, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688675550, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688675616, "dur":842, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688676459, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688676509, "dur":927, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688677437, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688677475, "dur":840, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688678316, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688678387, "dur":833, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688679221, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688679266, "dur":767, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688680034, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688680078, "dur":228, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688680307, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.2D.IK.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688680517, "dur":299, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688680817, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688680872, "dur":267, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688681140, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688681243, "dur":505, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688681749, "dur":372, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Plugins/x86_64/lib_burst_generated.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688682125, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688687790, "dur":2881, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/Plugins/x86_64/lib_burst_generated.dll" }}
-,{ "pid":12345, "tid":5, "ts":1687144688690732, "dur":302, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":5, "ts":1687144688691034, "dur":382, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688691418, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level9" }}
-,{ "pid":12345, "tid":5, "ts":1687144688691504, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688691508, "dur":5555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level9" }}
-,{ "pid":12345, "tid":5, "ts":1687144688697247, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level2" }}
-,{ "pid":12345, "tid":5, "ts":1687144688697433, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687144688697441, "dur":3129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level2" }}
-,{ "pid":12345, "tid":5, "ts":1687144688700632, "dur":1404, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688667076, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688667077, "dur":6045, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688673123, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1687144688673276, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688673369, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1687144688673464, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688673529, "dur":640, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1687144688674169, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688674249, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688674295, "dur":655, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688674951, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688675030, "dur":844, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688675875, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688675952, "dur":375, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688676328, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688676386, "dur":300, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688676688, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688676769, "dur":439, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688677209, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688677270, "dur":429, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688677700, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688677779, "dur":439, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688678219, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688678268, "dur":714, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688678982, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688679029, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688679083, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688679136, "dur":154, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688679291, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688679335, "dur":575, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688679911, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688679960, "dur":410, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688680372, "dur":239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688680611, "dur":247, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688680859, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688680909, "dur":396, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688681307, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":6, "ts":1687144688681361, "dur":405, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688681766, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets8.assets" }}
-,{ "pid":12345, "tid":6, "ts":1687144688681818, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688683753, "dur":2160, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets8.assets" }}
-,{ "pid":12345, "tid":6, "ts":1687144688685968, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets5.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1687144688686030, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688686034, "dur":4465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets5.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1687144688690559, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":6, "ts":1687144688690622, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688690626, "dur":4771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":6, "ts":1687144688695479, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level3" }}
-,{ "pid":12345, "tid":6, "ts":1687144688695612, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687144688695618, "dur":4808, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level3" }}
-,{ "pid":12345, "tid":6, "ts":1687144688700497, "dur":1559, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688666806, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688666807, "dur":6303, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688673117, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":7, "ts":1687144688673123, "dur":266, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688673392, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/app.info" }}
-,{ "pid":12345, "tid":7, "ts":1687144688673395, "dur":339, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688673735, "dur":265, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":7, "ts":1687144688674000, "dur":240, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688674241, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura.exe" }}
-,{ "pid":12345, "tid":7, "ts":1687144688674314, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688674361, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688674414, "dur":1136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688675551, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688675614, "dur":592, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688676222, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688676294, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688676372, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688676430, "dur":769, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688677200, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688677257, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688677330, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688677382, "dur":908, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688678291, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688678371, "dur":791, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688679163, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688679204, "dur":539, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688679744, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688679961, "dur":323, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688680285, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688680466, "dur":425, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688680892, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688680971, "dur":569, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688681541, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688681601, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688681675, "dur":300, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688681977, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688685815, "dur":1975, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":7, "ts":1687144688687861, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":7, "ts":1687144688687937, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688687941, "dur":3459, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":7, "ts":1687144688691480, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level8" }}
-,{ "pid":12345, "tid":7, "ts":1687144688691600, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688691605, "dur":3659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level8" }}
-,{ "pid":12345, "tid":7, "ts":1687144688695347, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level4" }}
-,{ "pid":12345, "tid":7, "ts":1687144688695441, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688695448, "dur":3093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level4" }}
-,{ "pid":12345, "tid":7, "ts":1687144688698608, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":7, "ts":1687144688698680, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687144688698685, "dur":3266, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":7, "ts":1687144688702009, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":7, "ts":1687144688702010, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688667840, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688667841, "dur":5391, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688673233, "dur":186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":8, "ts":1687144688673419, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688673493, "dur":407, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1687144688673901, "dur":267, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688674169, "dur":166, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688674335, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688674422, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688674501, "dur":1066, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688675568, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688675633, "dur":762, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688676396, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688676446, "dur":813, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688677260, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688677319, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688677399, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688677456, "dur":602, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688678059, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688678103, "dur":429, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688678533, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688678577, "dur":444, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688679022, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688679081, "dur":257, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688679339, "dur":489, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688679828, "dur":268, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688680097, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.Cecil.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688680156, "dur":320, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688680476, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688680529, "dur":364, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688680894, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688680953, "dur":506, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688681460, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":8, "ts":1687144688681518, "dur":300, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688681819, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets7.assets" }}
-,{ "pid":12345, "tid":8, "ts":1687144688681885, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688684367, "dur":1882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets7.assets" }}
-,{ "pid":12345, "tid":8, "ts":1687144688686299, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":8, "ts":1687144688686349, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688686353, "dur":3504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":8, "ts":1687144688689897, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":8, "ts":1687144688689942, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688689947, "dur":3372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":8, "ts":1687144688693408, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level7" }}
-,{ "pid":12345, "tid":8, "ts":1687144688693549, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688693557, "dur":5562, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level7" }}
-,{ "pid":12345, "tid":8, "ts":1687144688699189, "dur":290, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/boot.config" }}
-,{ "pid":12345, "tid":8, "ts":1687144688699480, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687144688699672, "dur":2383, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687144688706584, "dur":1656, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1687144688721184, "dur": 647, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1687144688719960, "dur": 1919, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1687225658565700, "dur":1301, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658567006, "dur":115, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1687225658567155, "dur":18, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1687225658567173, "dur":259, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1687225658567456, "dur":677, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658568133, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595229, "dur":346, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595575, "dur":27, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595602, "dur":19, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595621, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595625, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595626, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595632, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595633, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595645, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595647, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595650, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595651, "dur":17, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595668, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595669, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595673, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595674, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595678, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595697, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658595716, "dur":3041, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1687225658568521, "dur":8, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658568530, "dur":5297, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658573847, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1687225658573913, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658573959, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574030, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574081, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574134, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574184, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574229, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574306, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574363, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574403, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574459, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574500, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574543, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574593, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574638, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574706, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574752, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574791, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574834, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574874, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574922, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658574964, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658575007, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658575045, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658575088, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658575195, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658575310, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658575378, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658575435, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658575487, "dur":613, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658576100, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658576159, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658576219, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658576271, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687225658576328, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658576380, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1687225658576450, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658577190, "dur":5431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1687225658582667, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1687225658582715, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658582718, "dur":5055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1687225658587833, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level8" }}
+,{ "pid":12345, "tid":1, "ts":1687225658587876, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658587879, "dur":2756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level8" }}
+,{ "pid":12345, "tid":1, "ts":1687225658590677, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level1" }}
+,{ "pid":12345, "tid":1, "ts":1687225658590720, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687225658590723, "dur":2917, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level1" }}
+,{ "pid":12345, "tid":1, "ts":1687225658593681, "dur":1593, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658569615, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658569615, "dur":4291, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658573907, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574022, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574065, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574114, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574170, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574222, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574264, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574355, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574401, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574454, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574504, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574549, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574592, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574634, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574672, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574714, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574753, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574797, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574835, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574881, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574924, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658574977, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658575133, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658575176, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658575282, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658575326, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658575367, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658575409, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658575449, "dur":1049, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687225658576498, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658576536, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets6.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1687225658576572, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658579109, "dur":4014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets6.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1687225658583160, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1687225658583222, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658583226, "dur":4247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1687225658587532, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level9" }}
+,{ "pid":12345, "tid":2, "ts":1687225658587586, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658587592, "dur":2492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level9" }}
+,{ "pid":12345, "tid":2, "ts":1687225658590128, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level3" }}
+,{ "pid":12345, "tid":2, "ts":1687225658590184, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687225658590187, "dur":2083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level3" }}
+,{ "pid":12345, "tid":2, "ts":1687225658592312, "dur":2908, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658567962, "dur":294, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658568256, "dur":5713, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658573969, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574036, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574077, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574126, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574168, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574217, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574262, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574303, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574350, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574405, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574447, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574494, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574539, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574584, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574627, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574681, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574727, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574822, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574865, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574915, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574956, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658574999, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575036, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575081, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575119, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575163, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575204, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575338, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575387, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575434, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575475, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575519, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575556, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575779, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658575817, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658576001, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658576043, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658576086, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658576156, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658576204, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658576244, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658576290, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658576336, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687225658576385, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658576424, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":3, "ts":1687225658576471, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658578610, "dur":3976, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":3, "ts":1687225658582627, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":3, "ts":1687225658582675, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658582679, "dur":3458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":3, "ts":1687225658586198, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1687225658586371, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658586431, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1687225658586473, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658586476, "dur":3352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1687225658589883, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level5" }}
+,{ "pid":12345, "tid":3, "ts":1687225658589938, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658589946, "dur":2257, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level5" }}
+,{ "pid":12345, "tid":3, "ts":1687225658592248, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1687225658592400, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687225658592446, "dur":2850, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658568458, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658568458, "dur":5449, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658573907, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1687225658574008, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658574071, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1687225658574131, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658574194, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687225658574305, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658574372, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687225658574432, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658574486, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687225658574543, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658574604, "dur":566, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687225658575170, "dur":170, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658575342, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687225658575503, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658575544, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687225658575593, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658575628, "dur":249, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687225658575877, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658575944, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687225658575988, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658576027, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687225658576069, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658576107, "dur":184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687225658576292, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658576332, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687225658576380, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658576418, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":4, "ts":1687225658576466, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658578095, "dur":3831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":4, "ts":1687225658581977, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":4, "ts":1687225658582028, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658582041, "dur":3115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":4, "ts":1687225658585201, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1687225658585238, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658585240, "dur":3253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1687225658588554, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level6" }}
+,{ "pid":12345, "tid":4, "ts":1687225658588623, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658588628, "dur":2502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level6" }}
+,{ "pid":12345, "tid":4, "ts":1687225658591177, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":4, "ts":1687225658591223, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687225658591225, "dur":3851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":4, "ts":1687225658595109, "dur":135, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658569422, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658569422, "dur":4505, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658573927, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574028, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574076, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574136, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574293, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574481, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574535, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574598, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574677, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574727, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574771, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574818, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658574863, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575025, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575064, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575109, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575150, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575195, "dur":191, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575387, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575450, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575497, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575544, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575595, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575639, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658575677, "dur":518, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658576195, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658576237, "dur":267, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687225658576504, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658576555, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":5, "ts":1687225658576611, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658580061, "dur":3691, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":5, "ts":1687225658583847, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1687225658583896, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658583901, "dur":5932, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1687225658589929, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level4" }}
+,{ "pid":12345, "tid":5, "ts":1687225658590033, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687225658590037, "dur":2270, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level4" }}
+,{ "pid":12345, "tid":5, "ts":1687225658592346, "dur":2929, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658568251, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658568252, "dur":5568, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658573847, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":6, "ts":1687225658573853, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658573902, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/app.info" }}
+,{ "pid":12345, "tid":6, "ts":1687225658573904, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658573947, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574050, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574107, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574169, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574224, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura.exe" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574296, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574354, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574404, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574445, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574492, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574535, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574582, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574629, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574691, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574744, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574802, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574855, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574912, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658574969, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658575027, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658575080, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658575137, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658575186, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658575341, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658575414, "dur":315, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658575729, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658575773, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658575961, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576004, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576050, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576088, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576131, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576172, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576218, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576258, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576303, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576344, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576594, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576633, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1687225658576664, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658582378, "dur":3512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1687225658585936, "dur":199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1687225658586136, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658586199, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1687225658586258, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658586263, "dur":4653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1687225658590957, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1687225658591006, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687225658591009, "dur":4161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1687225658595196, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":6, "ts":1687225658595197, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658569201, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658569202, "dur":4622, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658573847, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1687225658573953, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574012, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574066, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574112, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574164, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574211, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574263, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574314, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574380, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574431, "dur":338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574770, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574916, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658574976, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658575018, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658575065, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658575109, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658575153, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658575337, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658575402, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658575453, "dur":208, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658575661, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658575717, "dur":201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658575918, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658575973, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658576030, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658576076, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658576132, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658576181, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658576235, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658576283, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687225658576341, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658576396, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets9.assets" }}
+,{ "pid":12345, "tid":7, "ts":1687225658576455, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658577543, "dur":4955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets9.assets" }}
+,{ "pid":12345, "tid":7, "ts":1687225658582530, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":7, "ts":1687225658582564, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658582566, "dur":2476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":7, "ts":1687225658585086, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1687225658585134, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658585137, "dur":5735, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1687225658590911, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1687225658590956, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687225658590959, "dur":3925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1687225658594919, "dur":377, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658568727, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658568727, "dur":5201, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658573928, "dur":311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574239, "dur":217, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574457, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574529, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574575, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574626, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574673, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574723, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574768, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574818, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574860, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574916, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658574967, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658575016, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658575059, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658575111, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658575156, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658575204, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658575328, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658575383, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658575428, "dur":616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658576044, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658576099, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658576148, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658576189, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658576237, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658576280, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658576327, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658576372, "dur":336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658576748, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658582981, "dur":1790, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687225658584818, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":8, "ts":1687225658584866, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658584870, "dur":2998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":8, "ts":1687225658588002, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level7" }}
+,{ "pid":12345, "tid":8, "ts":1687225658588091, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658588095, "dur":2339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level7" }}
+,{ "pid":12345, "tid":8, "ts":1687225658590503, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Executvel/Linguaventura_Data/level2" }}
+,{ "pid":12345, "tid":8, "ts":1687225658590549, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687225658590552, "dur":2470, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Executvel/Linguaventura_Data/level2" }}
+,{ "pid":12345, "tid":8, "ts":1687225658593050, "dur":2198, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687225658600151, "dur":1222, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1687225658616643, "dur": 649, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1687225658616514, "dur": 814, "ph": "X", "name": "Write chrome-trace events", "args": {} },

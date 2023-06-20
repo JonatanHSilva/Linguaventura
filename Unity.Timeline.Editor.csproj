@@ -227,8 +227,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Manipulators\AddDelete\AddDeleteItemModeMix.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\treeview\ItemGui\TimelineItemGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Window\TimelineWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Window\SequenceContext.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Signals\SignalAssetInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Window\SequenceContext.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Undo\UndoScope.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\CustomEditors\TrackEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Signals\Styles.cs" />
