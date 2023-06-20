@@ -39,7 +39,7 @@ public class SetNomeJogador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MudarNome();
+        //MudarNome();
     }
 
     public void SetNome()
