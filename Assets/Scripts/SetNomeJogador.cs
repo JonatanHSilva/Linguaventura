@@ -33,13 +33,12 @@ public class SetNomeJogador : MonoBehaviour
     void Start()
     {
         m = FindObjectOfType<MenuScript>();
-        //LoadNome();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //MudarNome();
+        
     }
 
     public void SetNome()
@@ -87,7 +86,7 @@ public class SetNomeJogador : MonoBehaviour
 
     public void MudarNome()
     {
-        if(Input.GetButtonDown("Submit") || click == true)
+        if(click)
         {
             if (nomePlayer.text != "")
             {
@@ -116,5 +115,6 @@ public class SetNomeJogador : MonoBehaviour
     public void clicked()
     {
         click = true;
+        MudarNome();
     }
 }
