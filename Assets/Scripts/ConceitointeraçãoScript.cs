@@ -6,6 +6,7 @@ public class ConceitointeraçãoScript : MonoBehaviour
 {
     public Animator animator;
     public GameObject janela, bauAberto, bauFechado;
+    public float time;
     int vez = 0;
 
     void Update()
@@ -27,6 +28,11 @@ public class ConceitointeraçãoScript : MonoBehaviour
         bauAberto.SetActive(true);
         bauFechado.SetActive(false);
         Time.timeScale = 1;
+        time += Time.deltaTime;
+        if(time > 3)
+        {
+            janela.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
