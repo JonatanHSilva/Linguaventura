@@ -40,6 +40,7 @@ public class MenuScript : MonoBehaviour
 
     public void VoltarMenu()
     {
+        s.Reinicio();
         StartCoroutine(VoltarAoMenu());
     }
 
