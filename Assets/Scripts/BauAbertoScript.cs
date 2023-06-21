@@ -82,6 +82,7 @@ public class BauAbertoScript : MonoBehaviour
     public void PopUpMensagem()
     {
         animator1.SetTrigger("pop");
+        dano += d.GetDano();
         d.SetDano(dano);
     }
 
