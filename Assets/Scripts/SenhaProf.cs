@@ -29,6 +29,7 @@ public class SenhaProf : MonoBehaviour
     public Text mensagem;
     public Button botao;
     bool click = false;
+    int campo = 1;
 
     private void Start()
     {
@@ -38,6 +39,27 @@ public class SenhaProf : MonoBehaviour
     private void Update()
     {
         botao.onClick.AddListener(clicked);
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            campo++;
+            if(campo == 4)
+            {
+                campo = 1;
+            }
+        }
+
+        switch (campo)
+        {
+            case 1:
+                password.Select();
+                break;
+            case 2:
+                changePassword.Select();
+                break;
+            case 3:
+                matchedPassword.Select();
+                break;
+        }
     }
 
 

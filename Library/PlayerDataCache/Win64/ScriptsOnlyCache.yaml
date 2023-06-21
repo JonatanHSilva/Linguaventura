@@ -52,8 +52,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -155,6 +157,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: SenhaProf
+    methodName: VerificarSenha
   - assembly: Assembly-CSharp
     fullTypeName: SenhaProf
     methodName: VerificarSenha
@@ -422,7 +427,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4910}
     - Class: 114
-      Script: {instanceID: 5786}
+      Script: {instanceID: 5788}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -525,7 +530,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4910}
     - Class: 114
-      Script: {instanceID: 5910}
+      Script: {instanceID: 5912}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -630,7 +635,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4910}
     - Class: 114
-      Script: {instanceID: 5910}
+      Script: {instanceID: 5912}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -735,7 +740,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4910}
     - Class: 114
-      Script: {instanceID: 5910}
+      Script: {instanceID: 5912}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -840,7 +845,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4910}
     - Class: 114
-      Script: {instanceID: 5910}
+      Script: {instanceID: 5912}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -929,9 +934,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4928}
     - Class: 114
-      Script: {instanceID: 5306}
+      Script: {instanceID: 5308}
     - Class: 114
-      Script: {instanceID: 5316}
+      Script: {instanceID: 5318}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1995,6 +2000,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 6729f20bf2dd6cd39b78eecf51e08826
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: "Conceitointera\xE7\xE3oScript"
   - hash:
       serializedVersion: 2
       Hash: fe1fdeffc2067077b2f1a90b210c2532

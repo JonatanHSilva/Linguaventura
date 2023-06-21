@@ -7,19 +7,30 @@ public class ConceitointeraçãoScript : MonoBehaviour
     public Animator animator;
     public GameObject janela, bauAberto, bauFechado;
     public float timeFechar;
+    bool playerInRange = false;
     int vez = 0, fechou = 0;
     float time = 0;
 
     void Update()
     {
+        if (playerInRange)
+        {
+            if (vez == 0)
+            {
+                PopUp();
+                vez++;
+            }
+        }
+
         if(fechou == 1)
         {
             time += Time.deltaTime;
             if(time > timeFechar)
             {
+                bauFechado.SetActive(false);
                 janela.SetActive(false);
             }
-    }
+        }
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
             ClosePopUp();
@@ -35,28 +46,12 @@ public class ConceitointeraçãoScript : MonoBehaviour
     {
         animator.SetTrigger("close");
         bauAberto.SetActive(true);
-        bauFechado.SetActive(false);
-        Time.timeScale = 1;
+        fechou = 1;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         janela.SetActive(true);
-        vez = 1;
-        GetInfo();
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        //ClosePopUp();
-    }
-
-    public void GetInfo()
-    {
-        if (vez == 1)
-        {
-            Time.timeScale = 0;
-            PopUp();
-        }
+        playerInRange = true;
     }
 }

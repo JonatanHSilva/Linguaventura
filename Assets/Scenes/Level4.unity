@@ -2350,7 +2350,7 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: fileName
-      value: Fase 2
+      value: Fase 4
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2360,7 +2360,7 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.size
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2385,8 +2385,7 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].pergunta
-      value: "No contexto de Vozes Verbais qual Voz \xE9 corresponde \xE0 seguinte
-        frase: \n\"William Shakespeare escreveu a pe\xE7a Sonho de uma noite de ver\xE3o.\""
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2420,7 +2419,7 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].qtdRespostas
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2445,7 +2444,7 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaCerta
-      value: Voz Ativa
+      value: Certo
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2470,17 +2469,17 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaA
-      value: Voz Passiva
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaB
-      value: Voz Inativa
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaC
-      value: Voz Reflexiva
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
