@@ -76,7 +76,7 @@ public class MovementEnemyScript : MonoBehaviour
         }
         if (vez == 0)
         {
-            if (vida == 900)
+            if ((float)vida == (float)vidaMaxima * 0.9)
             {
                 AumentaDano();
                 vez++;
@@ -306,6 +306,6 @@ public class MovementEnemyScript : MonoBehaviour
 
     public void AumentaDano()
     {
-        damage += 10;
+        damage += 80;
     }
 }
