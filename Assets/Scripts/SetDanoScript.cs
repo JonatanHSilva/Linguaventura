@@ -70,7 +70,7 @@ public class SetDanoScript : MonoBehaviour
         LoadDano();
         d = dano[0];
         this.damage = damage;
-        d.dano += this.damage;
+        d.dano = this.damage;
         SalvarDano();
     }
 
