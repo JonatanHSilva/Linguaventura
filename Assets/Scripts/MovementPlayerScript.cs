@@ -14,13 +14,14 @@ public class MovementPlayerScript : MonoBehaviour
     public TextMeshProUGUI lifeText, nome;
     public int vida = 10;
     public int vidaMaxima = 10;
-    public int damage = 1;
+    public int damage = 10;
     public GameObject perdeu, menu;
     bool pause = false, morto = false;
     public GameObject quiz;
     public TextMeshProUGUI hitText;
     int hit = 0;
     SetNomeJogador s;
+    
 
     Vector2 direction;
     public Rigidbody2D rb;

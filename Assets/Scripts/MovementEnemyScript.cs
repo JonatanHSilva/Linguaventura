@@ -15,12 +15,13 @@ public class MovementEnemyScript : MonoBehaviour
     public TextMeshProUGUI lifeText;
     public int vida = 10;
     public int vidaMaxima = 10;
-    public int damage = 1;
+    int damage = 10;
     public GameObject proxFase;
     int ativaQuiz = 0, vidaAntiga, hit = 0;
     public TextMeshProUGUI hitText;
     BoxCollider2D collide;
     int direcao, vez = 0;
+    SetDanoScript d;
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -34,6 +35,8 @@ public class MovementEnemyScript : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1;
+        d = FindObjectOfType<SetDanoScript>();
+        damage = d.GetDano();
         s = FindObjectOfType<SetFaseScript>();
         direcao = Random.Range(0, 3);
         switch (direcao)
