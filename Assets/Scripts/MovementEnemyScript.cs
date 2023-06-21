@@ -78,7 +78,7 @@ public class MovementEnemyScript : MonoBehaviour
         {
             if ((float)vida == (float)vidaMaxima * 0.9)
             {
-                AumentaDano();
+                AumentaDano(20);
                 vez++;
             }
         }
@@ -304,8 +304,8 @@ public class MovementEnemyScript : MonoBehaviour
         return Random.Range(-1, 2);
     }
 
-    public void AumentaDano()
+    public void AumentaDano(int dano)
     {
-        damage += 80;
+        damage += dano;
     }
 }
