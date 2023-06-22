@@ -5,11 +5,11 @@ using UnityEngine;
 public class BauAbertoScript : MonoBehaviour
 {
     public Animator animator, animator1;
-    public GameObject janela, bauAberto, bauFechado, mensagem;
+    public GameObject janela, bauAbertoA, bauFechado, mensagem;
     public float timeFechar;
     bool playerInRange = false;
     int vez = 0, fechouTela = 0, fechou = 0, inputVez = 0;
-    int abriuMensagem = 0;
+    int abriuMensagem = 0, entrou = 0;
     float time = 0, timeFechado = 0;
     public int dano;
     SetDanoScript d;
@@ -23,12 +23,15 @@ public class BauAbertoScript : MonoBehaviour
     {
         if (playerInRange)
         {
+            Fechar();
             if (vez == 0)
             {
-                PopUp();
+                PopUpBauAberto();
                 vez++;
             }
         }
+
+        if(entrou == 1) Fechar();
 
         if(fechouTela == 1)
         {
@@ -42,7 +45,6 @@ public class BauAbertoScript : MonoBehaviour
             time += Time.deltaTime;
             if(time > timeFechar)
             {
-                bauFechado.SetActive(false);
                 janela.SetActive(false);
                 fechouTela = 2;
             }
@@ -51,31 +53,24 @@ public class BauAbertoScript : MonoBehaviour
 
         if(fechou == 1)
         {
-            Debug.Log("A");
             timeFechado += Time.deltaTime;
             if (timeFechado > timeFechar)
             {
                 mensagem.SetActive(false);
+                bauFechado.SetActive(false);          
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
-        {
-            if (fechouTela == 0) ClosePopUp();
-            if (inputVez == 1) ClosePopUpMensagem();
-            inputVez++;
-        } 
     }
 
-    public void PopUp()
+    public void PopUpBauAberto()
     {
         animator.SetTrigger("pop");
     }
 
-    public void ClosePopUp()
+    public void ClosePopUpAberto()
     {
         animator.SetTrigger("close");
-        bauAberto.SetActive(true);
+        bauAbertoA.SetActive(true);
         fechouTela = 1;
     }
 
@@ -96,5 +91,17 @@ public class BauAbertoScript : MonoBehaviour
     {
         janela.SetActive(true);
         playerInRange = true;
+        entrou = 1;
+    }
+
+
+    void Fechar()
+    {
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+        {
+            if (fechouTela == 0) ClosePopUpAberto();
+            if (inputVez == 1) ClosePopUpMensagem();
+            inputVez++;
+        }
     }
 }

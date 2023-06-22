@@ -66,6 +66,9 @@ public class ProjectileScript : MonoBehaviour
             if (dissipate != null) Instantiate(dissipate, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-        Destroy(gameObject);
+        else if(obj.CompareTag("Magia"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

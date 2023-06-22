@@ -15,6 +15,7 @@ TagManager:
   - Scene
   - Level 4
   - MagiaChefe
+  - Magia
   layers:
   - Default
   - TransparentFX

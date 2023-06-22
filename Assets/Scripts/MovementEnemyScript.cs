@@ -25,7 +25,7 @@ public class MovementEnemyScript : MonoBehaviour
 
     public Rigidbody2D rb;
     public Animator animator;
-    public GameObject projectile, quiz;
+    public GameObject projectile, quiz, mensagem;
     public float shootDistance = 1;
     public float shootSpeed = 300;
     public float shootCoolDown = .8f;
@@ -38,6 +38,7 @@ public class MovementEnemyScript : MonoBehaviour
         d = FindObjectOfType<SetDanoScript>();
         damage = d.GetDano();
         s = FindObjectOfType<SetFaseScript>();
+        if (mensagem.activeSelf) Time.timeScale = 0;
         direcao = Random.Range(0, 3);
         switch (direcao)
         {

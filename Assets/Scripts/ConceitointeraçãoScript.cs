@@ -8,19 +8,22 @@ public class ConceitointeraçãoScript : MonoBehaviour
     public GameObject janela, bauAberto, bauFechado;
     public float timeFechar;
     bool playerInRange = false;
-    int vez = 0, fechou = 0;
+    int vez = 0, fechou = 0, entrou = 0;
     float time = 0;
 
     void Update()
     {
         if (playerInRange)
         {
+            Fechar();
             if (vez == 0)
             {
                 PopUp();
                 vez++;
             }
         }
+
+        if (entrou == 1) Fechar();
 
         if(fechou == 1)
         {
@@ -31,10 +34,6 @@ public class ConceitointeraçãoScript : MonoBehaviour
                 janela.SetActive(false);
             }
         }
-        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
-        {
-            ClosePopUp();
-        } 
     }
 
     public void PopUp()
@@ -53,5 +52,14 @@ public class ConceitointeraçãoScript : MonoBehaviour
     {
         janela.SetActive(true);
         playerInRange = true;
+        entrou = 1;
+    }
+
+    void Fechar()
+    {
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+        {
+            ClosePopUp();
+        }
     }
 }

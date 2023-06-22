@@ -450,10 +450,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1032,8 +1032,8 @@ MonoBehaviour:
   lifeText: {fileID: 1702308128}
   nome: {fileID: 1179255910}
   vida: 5
-  vidaMaxima: 150
-  damage: 10
+  vidaMaxima: 300
+  damage: 20
   perdeu: {fileID: 197872095}
   menu: {fileID: 950920555}
   quiz: {fileID: 86079042}
@@ -1117,6 +1117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 518794663}
   - component: {fileID: 518794664}
+  - component: {fileID: 518794665}
   m_Layer: 0
   m_Name: SCENE
   m_TagString: Untagged
@@ -1156,6 +1157,21 @@ MonoBehaviour:
   n:
     nome: 
   nomePlayer: {fileID: 0}
+--- !u!114 &518794665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518794662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df5fe6b5e28e4944ead3ebbe9656c0a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dano: []
+  d:
+    dano: 0
 --- !u!1 &527074828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,10 +1651,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1970,10 +1986,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2550,7 +2566,7 @@ PrefabInstance:
     - target: {fileID: 7335788983935244184, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: m_Color.a
-      value: 0.24313726
+      value: 0.7058824
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983935244187, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2592,6 +2608,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7335788983948567569, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.7058824
+      objectReference: {fileID: 0}
     - target: {fileID: 7335788983948567571, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2621,6 +2642,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788984432277176, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788984432277176, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788984432277176, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 7335788984432277177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -3118,7 +3154,6 @@ MonoBehaviour:
   lifeText: {fileID: 1966941898}
   vida: 10
   vidaMaxima: 150
-  damage: 15
   proxFase: {fileID: 1035958537}
   hitText: {fileID: 1947394699}
   rb: {fileID: 0}
@@ -3203,7 +3238,7 @@ MonoBehaviour:
   lifeBar: {fileID: 858805266}
   lifeText: {fileID: 1966941898}
   vida: 10
-  vidaMaxima: 150
+  vidaMaxima: 600
   damage: 15
   proxFase: {fileID: 1035958537}
   tutorial: {fileID: 0}
@@ -8698,10 +8733,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

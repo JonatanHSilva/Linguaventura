@@ -15,7 +15,7 @@ public class MovementEnemyScript1 : MonoBehaviour
     public TextMeshProUGUI lifeText;
     public int vida = 10;
     public int vidaMaxima = 10;
-    int damage = 10;
+    public int damage = 10;
     public GameObject proxFase, tutorial;
     int ativaQuiz = 0, vidaAntiga, hit = 0;
     public TextMeshProUGUI hitText;
@@ -37,8 +37,7 @@ public class MovementEnemyScript1 : MonoBehaviour
         d = FindObjectOfType<SetDanoScript>();
         damage = d.GetDano();
         s = FindObjectOfType<SetFaseScript>();
-        fase = s.GetFase();
-        if (fase != 1) Time.timeScale = 1;
+        if (s.GetFase() != 1) Time.timeScale = 1;
         direcao = Random.Range(0, 4);
         switch (direcao)
         {
@@ -69,7 +68,7 @@ public class MovementEnemyScript1 : MonoBehaviour
         }
         vida = vidaMaxima;
         UpdateUI();
-        collide = gameObject.GetComponent<BoxCollider2D>();
+        collide = this.gameObject.GetComponent<BoxCollider2D>();
     }
 
 
