@@ -7,9 +7,17 @@ public class ConceitointeraçãoScript : MonoBehaviour
     public Animator animator;
     public GameObject janela, bauAberto, bauFechado;
     public float timeFechar;
+    public int indice;
     bool playerInRange = false;
     int vez = 0, fechou = 0, entrou = 0;
     float time = 0;
+    SetBauScript b;
+
+    private void Start()
+    {
+        b = FindObjectOfType<SetBauScript>();
+        BauFechado();
+    }
 
     void Update()
     {
@@ -52,6 +60,7 @@ public class ConceitointeraçãoScript : MonoBehaviour
     {
         janela.SetActive(true);
         playerInRange = true;
+        AbriuBau();
         entrou = 1;
     }
 
@@ -61,5 +70,19 @@ public class ConceitointeraçãoScript : MonoBehaviour
         {
             ClosePopUp();
         }
+    }
+
+    void BauFechado()
+    {
+        if(b.GetBau(indice) == 1)
+        {
+            bauAberto.SetActive(true);
+            bauFechado.SetActive(false);
+        }
+    }
+
+    void AbriuBau()
+    {
+        b.SetBau(indice);
     }
 }

@@ -9,12 +9,14 @@ public class MenuScript : MonoBehaviour
     SetFaseScript s;
     MovementPlayerScript p;
     SetDanoScript d;
+    SetBauScript b;
     // Start is called before the first frame update
     void Start()
     {
         d = FindObjectOfType<SetDanoScript>();
         p = FindObjectOfType<MovementPlayerScript>();
         s = FindObjectOfType<SetFaseScript>();
+        b = FindObjectOfType<SetBauScript>();
     }
 
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class MenuScript : MonoBehaviour
     {
         s.Reinicio();
         d.SetDano(10);
+        b.ResetBau();
         StartCoroutine(WaitFechar());
     }
 
@@ -45,6 +48,7 @@ public class MenuScript : MonoBehaviour
     {
         s.Reinicio();
         d.SetDano(10);
+        b.ResetBau();
         StartCoroutine(VoltarAoMenu());
     }
 
@@ -121,5 +125,6 @@ public class MenuScript : MonoBehaviour
     void OnApplicationQuit(){
         s.Reinicio();
         d.SetDano(10);
+        b.ResetBau();
     }
 }

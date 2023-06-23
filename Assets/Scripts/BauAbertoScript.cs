@@ -12,11 +12,15 @@ public class BauAbertoScript : MonoBehaviour
     int abriuMensagem = 0, entrou = 0;
     float time = 0, timeFechado = 0;
     public int dano;
+    public int indice;
     SetDanoScript d;
+    SetBauScript b;
 
     private void Start()
     {
-        d = FindObjectOfType<SetDanoScript>();   
+        b = FindObjectOfType<SetBauScript>();
+        d = FindObjectOfType<SetDanoScript>();
+        BauFechado();
     }
 
     void Update()
@@ -91,6 +95,7 @@ public class BauAbertoScript : MonoBehaviour
     {
         janela.SetActive(true);
         playerInRange = true;
+        AbriuBau();
         entrou = 1;
     }
 
@@ -102,5 +107,19 @@ public class BauAbertoScript : MonoBehaviour
             if (fechouTela == 0) ClosePopUpAberto();
             if (abriuMensagem == 1) ClosePopUpMensagem();
         }
+    }
+
+    void BauFechado()
+    {
+        if (b.GetBau(indice) == 1)
+        {
+            bauAbertoA.SetActive(true);
+            bauFechado.SetActive(false);
+        }
+    }
+
+    void AbriuBau()
+    {
+        b.SetBau(indice);
     }
 }

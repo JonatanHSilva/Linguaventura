@@ -122,7 +122,7 @@ public class MovementPlayerJogo : MonoBehaviour
         }
     }
 
-    void OnApplicationPause(bool saiu){ 
+    void OnApplicationFocus(bool saiu){ 
          if(saiu) Pausa(); 
     }
 }

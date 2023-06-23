@@ -381,6 +381,7 @@
 "Assets/Scripts/QuisScript.cs"
 "Assets/Scripts/SelecionarFaseQuiz.cs"
 "Assets/Scripts/SenhaProf.cs"
+"Assets/Scripts/SetBauScript.cs"
 "Assets/Scripts/SetDanoScript.cs"
 "Assets/Scripts/SetFaseScript.cs"
 "Assets/Scripts/SetNomeJogador.cs"
