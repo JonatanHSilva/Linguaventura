@@ -343,7 +343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6464144472788275717
 RectTransform:
   m_ObjectHideFlags: 0
@@ -730,9 +730,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: "Conceitointera\xE7\xE3oScript, Assembly-CSharp"
-        m_MethodName: ClosePopUp
+      - m_Target: {fileID: 218025546866701554}
+        m_TargetAssemblyTypeName: BauAbertoScript, Assembly-CSharp
+        m_MethodName: ClosePopUpMensagem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -867,9 +867,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: "Conceitointera\xE7\xE3oScript, Assembly-CSharp"
-        m_MethodName: ClosePopUp
+      - m_Target: {fileID: 218025546866701554}
+        m_TargetAssemblyTypeName: BauAbertoScript, Assembly-CSharp
+        m_MethodName: ClosePopUpAberto
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -8,9 +8,11 @@ public class MenuScript : MonoBehaviour
 {
     SetFaseScript s;
     MovementPlayerScript p;
+    SetDanoScript d;
     // Start is called before the first frame update
     void Start()
     {
+        d = FindObjectOfType<SetDanoScript>();
         p = FindObjectOfType<MovementPlayerScript>();
         s = FindObjectOfType<SetFaseScript>();
     }
@@ -35,12 +37,14 @@ public class MenuScript : MonoBehaviour
     public void Fechar()
     {
         s.Reinicio();
+        d.SetDano(10);
         StartCoroutine(WaitFechar());
     }
 
     public void VoltarMenu()
     {
         s.Reinicio();
+        d.SetDano(10);
         StartCoroutine(VoltarAoMenu());
     }
 

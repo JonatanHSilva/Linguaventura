@@ -51,22 +51,7 @@ public class MovementPlayerScript : MonoBehaviour
         Movement(collide);
         if (Input.GetButtonDown("Cancel"))
         {
-            pause = !pause;
-            if (pause && !quiz.activeSelf && !morto)
-            {
-                menu.SetActive(true);
-                Time.timeScale = 0;
-            }
-            else if (quiz.activeSelf)
-            {
-                menu.SetActive(false);
-                Time.timeScale = 0;
-            }
-            else if (!morto)
-            {
-                menu.SetActive(false);
-                Time.timeScale = 1;
-            }
+            Pausa();
         }
     }
 
@@ -151,5 +136,25 @@ public class MovementPlayerScript : MonoBehaviour
     public void SetPause()
     {
         pause = !pause;
+    }
+
+    public void Pausa()
+    {
+        pause = !pause;
+        if (pause && !quiz.activeSelf && !morto)
+        {
+            menu.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else if (quiz.activeSelf)
+        {
+            menu.SetActive(false);
+            Time.timeScale = 0;
+        }
+        else if (!morto)
+        {
+            menu.SetActive(false);
+            Time.timeScale = 1;
+        }
     }
 }

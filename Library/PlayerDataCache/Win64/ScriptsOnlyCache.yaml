@@ -236,15 +236,78 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: "Conceitointera\xE7\xE3oScript"
+    methodName: ClosePopUp
+  - assembly: Assembly-CSharp
+    fullTypeName: "Conceitointera\xE7\xE3oScript"
+    methodName: ClosePopUp
+  - assembly: Assembly-CSharp
+    fullTypeName: BauAbertoScript
+    methodName: ClosePopUpMensagem
+  - assembly: Assembly-CSharp
+    fullTypeName: BauAbertoScript
+    methodName: ClosePopUpAberto
+  - assembly: Assembly-CSharp
+    fullTypeName: "Conceitointera\xE7\xE3oScript"
+    methodName: ClosePopUp
+  - assembly: Assembly-CSharp
+    fullTypeName: "Conceitointera\xE7\xE3oScript"
+    methodName: ClosePopUp
+  - assembly: Assembly-CSharp
+    fullTypeName: BauAbertoScript
+    methodName: ClosePopUpMensagem
+  - assembly: Assembly-CSharp
+    fullTypeName: BauAbertoScript
+    methodName: ClosePopUpAberto
+  - assembly: Assembly-CSharp
+    fullTypeName: BauAbertoScript
+    methodName: ClosePopUpMensagem
+  - assembly: Assembly-CSharp
+    fullTypeName: BauAbertoScript
+    methodName: ClosePopUpAberto
+  - assembly: Assembly-CSharp
+    fullTypeName: "Conceitointera\xE7\xE3oScript"
+    methodName: ClosePopUp
+  - assembly: Assembly-CSharp
+    fullTypeName: "Conceitointera\xE7\xE3oScript"
+    methodName: ClosePopUp
+  - assembly: Assembly-CSharp
+    fullTypeName: "Conceitointera\xE7\xE3oScript"
+    methodName: ClosePopUp
+  - assembly: Assembly-CSharp
+    fullTypeName: "Conceitointera\xE7\xE3oScript"
+    methodName: ClosePopUp
+  - assembly: Assembly-CSharp
+    fullTypeName: "Conceitointera\xE7\xE3oScript"
+    methodName: ClosePopUp
   - assembly: UnityEngine.AnimationModule
     fullTypeName: UnityEngine.Animator
     methodName: SetTrigger
   - assembly: Assembly-CSharp
     fullTypeName: MenuScript
     methodName: Fechar
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
-    fullTypeName: "Conceitointera\xE7\xE3oScript"
-    methodName: ClosePopUp
+    fullTypeName: MovementPlayerJogo
+    methodName: Pausa
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
+    methodName: VoltarMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: MovementPlayerJogo
+    methodName: Pausa
   - assembly: Assembly-CSharp
     fullTypeName: MenuScript
     methodName: VoltarMenu
@@ -273,6 +336,9 @@ ScriptsOnlyBuild:
     fullTypeName: MenuScript
     methodName: Jogar
   - assembly: Assembly-CSharp
+    fullTypeName: MovementPlayerScript
+    methodName: Pausa
+  - assembly: Assembly-CSharp
     fullTypeName: MenuScript
     methodName: VoltarMenu
   - assembly: Assembly-CSharp
@@ -296,6 +362,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: MenuScript
     methodName: Jogar
+  - assembly: Assembly-CSharp
+    fullTypeName: MovementPlayerScript
+    methodName: Pausa
   - assembly: Assembly-CSharp
     fullTypeName: MenuScript
     methodName: Jogar
@@ -330,6 +399,9 @@ ScriptsOnlyBuild:
     fullTypeName: MenuScript
     methodName: VoltarMenu
   - assembly: Assembly-CSharp
+    fullTypeName: MovementPlayerScript
+    methodName: Pausa
+  - assembly: Assembly-CSharp
     fullTypeName: MenuScript
     methodName: FecharPause
   - assembly: Assembly-CSharp
@@ -354,11 +426,20 @@ ScriptsOnlyBuild:
     fullTypeName: MenuScript
     methodName: Jogar
   - assembly: Assembly-CSharp
+    fullTypeName: MovementPlayerScript
+    methodName: Pausa
+  - assembly: Assembly-CSharp
     fullTypeName: MenuScript
     methodName: VoltarMenu
   - assembly: Assembly-CSharp
     fullTypeName: MenuScript
+    methodName: Jogar
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuScript
     methodName: FecharPause
+  - assembly: Assembly-CSharp
+    fullTypeName: TutorialScript
+    methodName: Clicked
   sceneClasses:
     Assets/Scenes/Jogo.unity:
     - Class: 1
@@ -846,6 +927,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17464}
     - Class: 114
+      Script: {instanceID: 17566}
+    - Class: 114
       Script: {instanceID: 17658}
     - Class: 114
       Script: {instanceID: 17912}
@@ -938,6 +1021,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 17658}
     - Class: 114
       Script: {instanceID: 17912}
+    - Class: 114
+      Script: {instanceID: 18484}
     - Class: 114
       Script: {instanceID: 18528}
     - Class: 114
@@ -1493,7 +1578,7 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: 098aea3aaeb164773094ca90d009de6b
+      Hash: 47e45d61b3f64673c8cc53cc5b27dde7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovementEnemyScript
@@ -1631,7 +1716,7 @@ ScriptsOnlyBuild:
     className: Benchmark03
   - hash:
       serializedVersion: 2
-      Hash: 2acec982d3b45ea66a1e83758e2d705c
+      Hash: 4d2ded9c2e2fe362d151ad3bdaf946dd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovementPlayerJogo

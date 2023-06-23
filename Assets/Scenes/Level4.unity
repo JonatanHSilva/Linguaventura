@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -590, y: -60}
+  m_AnchoredPosition: {x: -670, y: -60}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3672075
@@ -1621,6 +1621,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600455272}
   m_CullTransparentMesh: 1
+--- !u!1 &795118610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 795118611}
+  - component: {fileID: 795118614}
+  - component: {fileID: 795118613}
+  - component: {fileID: 795118612}
+  m_Layer: 5
+  m_Name: Pause
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &795118611
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795118610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2059669998}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -70, y: -70}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &795118612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795118610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 795118613}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 405116087}
+        m_TargetAssemblyTypeName: MovementPlayerScript, Assembly-CSharp
+        m_MethodName: Pausa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &795118613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795118610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.13725491, g: 0.6784314, b: 0.015686275, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5068845317090aa4ca877474c0654708, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &795118614
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795118610}
+  m_CullTransparentMesh: 1
 --- !u!1 &858805264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,7 +1789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -300, y: -60}
+  m_AnchoredPosition: {x: -380, y: -60}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &858805266
@@ -2471,7 +2604,7 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.size
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2496,41 +2629,83 @@ PrefabInstance:
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].pergunta
-      value: 
+      value: "A ora\xE7\xE3o subordinada adjetiva \xE9 aquela que desempenha a fun\xE7\xE3o
+        sint\xE1tica de adjunto adnominal em rela\xE7\xE3o a um termo da ora\xE7\xE3o
+        principal. Ela \xE9 introduzida por pronome relativo: que, quem, o qual,
+        cujo, onde, etc.\nAs ora\xE7\xF5es adjetivas qualificam substantivos e pronomes.\nAponte
+        qual das frases a seguir possui uma ora\xE7\xE3o subordinada adjetiva:"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].pergunta
-      value: "Na Voz Passiva, o sujeito da ora\xE7\xE3o \xE9 paciente, ou seja, o
-        sujeito \xE9 quem sofre a a\xE7\xE3o verbal. \nCom isso, qual \xE9 a frase
-        que possui a Voz Verbal mencionada?"
+      value: "A ora\xE7\xE3o subordinada adverbial temporal exprime o momento em
+        que ocorre o fato expresso na ora\xE7\xE3o principal ou a frequ\xEAncia com
+        que ocorre.\nAponte qual das frases a seguir possui uma ora\xE7\xE3o subordinada
+        adverbial temporal:"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].pergunta
-      value: "A Voz Passiva pode se dividir em dois tipos, onde cada um deles possui
-        uma rela\xE7\xE3o e uma forma\xE7\xE3o de frase diferente. \nSelecione o
-        tipo que corresponde a Voz Passiva:"
+      value: "A ora\xE7\xE3o subordinada adverbial condicional expressa a condi\xE7\xE3o
+        necess\xE1ria para que se realize o que foi dito na ora\xE7\xE3o principal
+        ou em que hip\xF3tese ocorre o que est\xE1 na ora\xE7\xE3o principal.\nAponte
+        qual das frases a seguir possui uma ora\xE7\xE3o subordinada adverbial condicional:"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].pergunta
-      value: 'Selecione qual Voz Verbal corresponde a seguinte frase:
-
-        "Ele
-        embrenhou-se num espinheiro[...]".'
+      value: "A ora\xE7\xE3o subordinada adverbial causal apresenta a causa do que
+        se afirma na ora\xE7\xE3o principal.\nAponte qual das frases a seguir possui
+        uma ora\xE7\xE3o subordinada adverbial causal:"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].pergunta
-      value: "A Voz Reflexiva pode ser rec\xEDproca, ou seja, se h\xE1 mais de um
-        sujeito na ora\xE7\xE3o, todos recebem a a\xE7\xE3o ao mesmo tempo. \nAssim,
-        qual frase representa essa reciprocidade?"
+      value: "A ora\xE7\xE3o subordinada adverbial consecutiva expressa a consequ\xEAncia
+        do que se diz na ora\xE7\xE3o principal.\nAponte qual das frases a seguir
+        possui uma ora\xE7\xE3o subordinada adverbial consecutiva:"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[5].pergunta
+      value: "A ora\xE7\xE3o subordinada adverbial concessiva apresenta um fato que
+        poderia impedir a realiza\xE7\xE3o do que \xE9 expresso na ora\xE7\xE3o principal
+        ou que poderia invalidar a informa\xE7\xE3o presente nela, mas n\xE3o o faz.\nAponte
+        qual das frases a seguir possui uma ora\xE7\xE3o subordinada adverbial concessiva:"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[6].pergunta
+      value: "A ora\xE7\xE3o subordinada adverbial final exprime a finalidade do
+        que se diz na ora\xE7\xE3o principal.\nAponte qual das frases a seguir possui
+        uma ora\xE7\xE3o subordinada adverbial final:"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[7].pergunta
+      value: "A ora\xE7\xE3o subordinada adverbial conformativa expressa uma ideia
+        que est\xE1 em conformidade (de acordo) com o que \xE9 declarado na ora\xE7\xE3o
+        principal.\nAponte qual das frases a seguir possui uma ora\xE7\xE3o subordinada
+        adverbial conformativa:"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[8].pergunta
+      value: "A ora\xE7\xE3o subordinada adverbial proporcional exprime em que propor\xE7\xE3o
+        ou grada\xE7\xE3o o que \xE9 apresentado na ora\xE7\xE3o principal.\nAponte
+        qual das frases a seguir possui uma ora\xE7\xE3o subordinada adverbial proporcional:"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[9].pergunta
+      value: "A ora\xE7\xE3o subordinada adverbial comparativa cont\xE9m o fato que
+        \xE9 comparado com aquilo que se diz na ora\xE7\xE3o principal.\nAponte qual
+        das frases a seguir possui uma ora\xE7\xE3o subordinada adverbial comparativa:"
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].qtdRespostas
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2554,103 +2729,228 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
+      propertyPath: perguntas.Array.data[5].qtdRespostas
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[6].qtdRespostas
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[7].qtdRespostas
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[8].qtdRespostas
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[9].qtdRespostas
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
       propertyPath: perguntas.Array.data[0].respostaCerta
-      value: Certo
+      value: "A pessoa que ganhou o pr\xEAmio ficou muito feliz."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaCerta
-      value: "O feiti\xE7o foi quebrado por ele."
+      value: "Chegarei em casa quando o sol se p\xF4r."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaCerta
-      value: "Anal\xEDtica"
+      value: "Se chover amanh\xE3, n\xE3o iremos ao parque."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaCerta
-      value: Voz Reflexiva
+      value: "Ele ficou acordado at\xE9 tarde porque estava estudando para a prova."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaCerta
-      value: "Os tr\xEAs uniram-se para moldar essa mentira."
+      value: " Ele correu tanto que ficou sem f\xF4lego."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[5].respostaCerta
+      value: "Apesar da chuva intensa, eles decidiram ir \xE0 praia."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[6].respostaCerta
+      value: Ele saiu de casa para que pudesse chegar a tempo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[7].respostaCerta
+      value: Ele agiu conforme lhe foi orientado.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[8].respostaCerta
+      value: Quanto mais estuda, mais aprende.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[9].respostaCerta
+      value: Ele estuda mais do que seus colegas de classe.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaA
-      value: 
+      value: "Maria comprou p\xE3o e leite no mercado."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaB
-      value: 
+      value: O filme que assisti ontem era muito emocionante.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[0].respostaErradaC
-      value: 
+      value: "Eu gosto de viajar para lugares ex\xF3ticos."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaA
-      value: "Ele quebrou o feiti\xE7o."
+      value: "Maria comprou p\xE3o e leite no mercado."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaB
-      value: "Quebrou-se o feiti\xE7o."
+      value: "Ele estuda para as provas e se esfor\xE7a bastante."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[1].respostaErradaC
-      value: "Ele desenfeiti\xE7ou-se."
+      value: "O cachorro latiu e assustou os p\xE1ssaros."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaErradaA
-      value: Quantitativa
+      value: "Maria gosta de nadar e dan\xE7ar."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaErradaB
-      value: Qualitativa
+      value: "Ele estuda para obter boas notas e melhorar seu desempenho acad\xEAmico."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[2].respostaErradaC
-      value: Reflexiva
+      value: "O cachorro correu atr\xE1s do seu pr\xF3prio rabo e divertiu a todos."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaErradaA
-      value: Voz Ativa
+      value: "Jo\xE3o correu no parque pela manh\xE3."
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaErradaB
-      value: Voz Passiva
+      value: Ana comprou um livro de receitas para aprender novas receitas.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[3].respostaErradaC
-      value: Voz Inativa
+      value: O carro vermelho estava estacionado na esquina.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaErradaA
-      value: "Os feiti\xE7os foram quebrados por ele."
+      value: Pedro comprou uma bicicleta nova para passear no parque.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaErradaB
-      value: "William Shakespeare escreveu varias pe\xE7as."
+      value: O filme foi emocionante e fez muitas pessoas chorarem.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: perguntas.Array.data[4].respostaErradaC
-      value: "Lisandro \xE9 amado por H\xE9rmia."
+      value: A sala estava cheia de alunos concentrados durante a prova.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[5].respostaErradaA
+      value: "O livro \xE9 interessante, mas n\xE3o consegui terminar de ler."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[5].respostaErradaB
+      value: Ele estudou muito para a prova, por isso teve um bom desempenho.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[5].respostaErradaC
+      value: "Ela acordou cedo e preparou um caf\xE9 da manh\xE3 delicioso."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[6].respostaErradaA
+      value: Ela estudou com afinco para obter boas notas.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[6].respostaErradaB
+      value: "O carro parou bruscamente para evitar a colis\xE3o."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[6].respostaErradaC
+      value: "O filme foi emocionante e prendeu a aten\xE7\xE3o de todos."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[7].respostaErradaA
+      value: Ela se vestiu elegantemente para a festa.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[7].respostaErradaB
+      value: "O p\xE1ssaro voou alto e desapareceu no horizonte."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[7].respostaErradaC
+      value: A chuva caiu intensamente durante toda a tarde.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[8].respostaErradaA
+      value: "Ele correu rapidamente at\xE9 chegar \xE0 linha de chegada."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[8].respostaErradaB
+      value: A casa estava vazia quando cheguei.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[8].respostaErradaC
+      value: "Ela gosta de comer pizza aos s\xE1bados."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[9].respostaErradaA
+      value: "Ele saiu para caminhar ap\xF3s o jantar."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[9].respostaErradaB
+      value: O filme foi muito emocionante para ela.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335788983458861175, guid: 95f2c26133f8a6f4a86c17f834dd4990,
+        type: 3}
+      propertyPath: perguntas.Array.data[9].respostaErradaC
+      value: Eles se encontraram no parque para conversar.
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983458861177, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2665,7 +2965,7 @@ PrefabInstance:
     - target: {fileID: 7335788983935244184, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: m_Color.a
-      value: 0.7058824
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 7335788983935244187, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -2725,7 +3025,7 @@ PrefabInstance:
     - target: {fileID: 7335788984167448227, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
       propertyPath: m_Color.a
-      value: 0.34117648
+      value: 0.50980395
       objectReference: {fileID: 0}
     - target: {fileID: 7335788984167448227, guid: 95f2c26133f8a6f4a86c17f834dd4990,
         type: 3}
@@ -6029,7 +6329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -300, y: -60}
+  m_AnchoredPosition: {x: -380, y: -60}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1929931329
@@ -8929,7 +9229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: 420}
+  m_AnchoredPosition: {x: -240, y: 420}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1947394699
@@ -9064,7 +9364,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -160, y: -60}
+  m_AnchoredPosition: {x: -240, y: -60}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1966941898
@@ -9342,6 +9642,7 @@ RectTransform:
   - {fileID: 3672074}
   - {fileID: 1900691528}
   - {fileID: 1947394698}
+  - {fileID: 795118611}
   m_Father: {fileID: 405116086}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

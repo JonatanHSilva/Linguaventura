@@ -8,7 +8,7 @@ public class BauAbertoScript : MonoBehaviour
     public GameObject janela, bauAbertoA, bauFechado, mensagem;
     public float timeFechar;
     bool playerInRange = false;
-    int vez = 0, fechouTela = 0, fechou = 0, inputVez = 0;
+    int vez = 0, fechouTela = 0, fechou = 0;
     int abriuMensagem = 0, entrou = 0;
     float time = 0, timeFechado = 0;
     public int dano;
@@ -23,7 +23,6 @@ public class BauAbertoScript : MonoBehaviour
     {
         if (playerInRange)
         {
-            Fechar();
             if (vez == 0)
             {
                 PopUpBauAberto();
@@ -35,18 +34,19 @@ public class BauAbertoScript : MonoBehaviour
 
         if(fechouTela == 1)
         {
-            if(abriuMensagem == 0)
-            {
-                mensagem.SetActive(true);
-                PopUpMensagem();
-                abriuMensagem = 1;
-            }
+            
             
             time += Time.deltaTime;
             if(time > timeFechar)
             {
                 janela.SetActive(false);
                 fechouTela = 2;
+                if (abriuMensagem == 0)
+                {
+                    mensagem.SetActive(true);
+                    PopUpMensagem();
+                    abriuMensagem = 1;
+                }
             }
         }
 
@@ -100,8 +100,7 @@ public class BauAbertoScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
             if (fechouTela == 0) ClosePopUpAberto();
-            if (inputVez == 1) ClosePopUpMensagem();
-            inputVez++;
+            if (abriuMensagem == 1) ClosePopUpMensagem();
         }
     }
 }

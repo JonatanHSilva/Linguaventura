@@ -86,17 +86,7 @@ public class MovementPlayerJogo : MonoBehaviour
 
         if (Input.GetButtonDown("Cancel"))
         {
-            pause = !pause;
-            if (pause)
-            {
-                menu.SetActive(true);
-                Time.timeScale = 0;
-            }
-            else if (pause == false)
-            {
-                menu.SetActive(false);
-                Time.timeScale = 1;
-            }
+            Pausa();
         }
     }
 
@@ -115,6 +105,21 @@ public class MovementPlayerJogo : MonoBehaviour
     {
         yield return new WaitForSeconds(.5f);
         SceneManager.LoadScene("Menu");
+    }
+
+    public void Pausa()
+    {
+        pause = !pause;
+        if (pause)
+        {
+            menu.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else if (pause == false)
+        {
+            menu.SetActive(false);
+            Time.timeScale = 1;
+        }
     }
 }
 
