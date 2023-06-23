@@ -121,5 +121,9 @@ public class MovementPlayerJogo : MonoBehaviour
             Time.timeScale = 1;
         }
     }
+
+    void OnApplicationPause(bool saiu){ 
+         if(saiu) Pausa(); 
+    }
 }
 
