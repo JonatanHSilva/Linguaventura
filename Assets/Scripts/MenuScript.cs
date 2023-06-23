@@ -117,4 +117,9 @@ public class MenuScript : MonoBehaviour
         p.SetPause();
         Time.timeScale = 1;
     }
+
+    void OnApplicationQuit(){
+        s.Reinicio();
+        d.SetDano(10);
+    }
 }
