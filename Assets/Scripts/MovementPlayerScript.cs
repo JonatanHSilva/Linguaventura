@@ -157,4 +157,8 @@ public class MovementPlayerScript : MonoBehaviour
             Time.timeScale = 1;
         }
     }
+
+    void OnApplicationPause(bool saiu){
+        if(saiu) Pausa();
+    }
 }
