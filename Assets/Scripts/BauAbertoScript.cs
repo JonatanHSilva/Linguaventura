@@ -74,7 +74,6 @@ public class BauAbertoScript : MonoBehaviour
     public void ClosePopUpAberto()
     {
         animator.SetTrigger("close");
-        bauAbertoA.SetActive(true);
         fechouTela = 1;
     }
 
@@ -94,6 +93,7 @@ public class BauAbertoScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         janela.SetActive(true);
+        bauAbertoA.SetActive(true);
         playerInRange = true;
         AbriuBau();
         entrou = 1;

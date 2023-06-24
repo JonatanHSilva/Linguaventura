@@ -8,7 +8,7 @@ public class MovementPlayerJogo : MonoBehaviour
 {
     public float speed;
     bool pause = false;
-    public GameObject menu, mensagem, painel, proxPainel, msgVitoria;
+    public GameObject menu, mensagem, painel, proxPainel, roteiro1, roteiro2, roteiro3, roteiro4, msgVitoria;
     public Rigidbody2D rb;
     public Animator animator, vitoria;
     Vector2 direction;
@@ -55,9 +55,45 @@ public class MovementPlayerJogo : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
                 {
+                    roteiro1.SetActive(false);
+                    roteiro2.SetActive(true);
+                    prox = 1;
+                }
+            }
+            else if(prox == 1)
+            {
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+                {
+                    roteiro2.SetActive(false);
+                    roteiro3.SetActive(true);
+                    prox = 2;
+                }
+            }
+            else if (prox == 2)
+            {
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+                {
+                    roteiro3.SetActive(false);
+                    roteiro4.SetActive(true);
+                    prox = 3;
+                }
+            }
+            else if (prox == 3)
+            {
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+                {
+                    roteiro4.SetActive(false);
+                    painel.SetActive(true);
+                    prox = 4;
+                }
+            }
+            else if (prox == 4)
+            {
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+                {
                     painel.SetActive(false);
                     proxPainel.SetActive(true);
-                    prox = 1;
+                    prox = 5;
                 }
             }
             else

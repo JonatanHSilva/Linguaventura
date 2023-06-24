@@ -97,16 +97,6 @@ public class MovementEnemyScript : MonoBehaviour
     {
         if (obj.GetType() == typeof(BoxCollider2D))
         {
-            /*if (dir.x != 0)
-            {
-                transform.Translate(new Vector2(dir.x * speed * Time.deltaTime, 0));
-            }
-            if (dir.y != 0)
-            {
-                transform.Translate(new Vector2(0, dir.y * speed * Time.deltaTime));
-            }*/
-
-
             if (transform.position.y > 2.6)
             {
                 do

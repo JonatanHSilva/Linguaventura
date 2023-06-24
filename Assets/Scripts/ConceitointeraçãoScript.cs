@@ -52,13 +52,13 @@ public class ConceitointeraçãoScript : MonoBehaviour
     public void ClosePopUp()
     {
         animator.SetTrigger("close");
-        bauAberto.SetActive(true);
         fechou = 1;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         janela.SetActive(true);
+        bauAberto.SetActive(true);
         playerInRange = true;
         AbriuBau();
         entrou = 1;
