@@ -15,7 +15,7 @@ public class MovementEnemyScript : MonoBehaviour
     public TextMeshProUGUI lifeText;
     public int vida = 10;
     public int vidaMaxima = 10;
-    int damage = 10;
+    public int damage = 10;
     public GameObject proxFase;
     int ativaQuiz = 0, vidaAntiga, hit = 0;
     public TextMeshProUGUI hitText;
@@ -79,7 +79,7 @@ public class MovementEnemyScript : MonoBehaviour
         {
             if ((float)vida == (float)vidaMaxima * 0.9)
             {
-                AumentaDano(20);
+                AumentaDano(80);
                 vez++;
             }
         }

@@ -25,7 +25,6 @@ public class QuisButtonsScript : MonoBehaviour
         {
             if(s.GetFase() == 4)
             {
-                danoInimigo1.AumentaDano(20);
                 danoInimigo1.TakeDamage();
             }
             else

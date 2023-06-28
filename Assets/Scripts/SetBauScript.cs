@@ -20,11 +20,12 @@ public class SetBauScript : MonoBehaviour
     List<Bau> baus;
     [SerializeField]
     Bau bau;
+    SetDanoScript d;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        d = FindObjectOfType<SetDanoScript>();
     }
 
     // Update is called once per frame
@@ -103,5 +104,6 @@ public class SetBauScript : MonoBehaviour
     private void OnApplicationQuit()
     {
         ResetBau();
+        d.SetDano(10);
     }
 }

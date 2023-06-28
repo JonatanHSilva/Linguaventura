@@ -14,6 +14,8 @@ public class MovementPlayerJogo : MonoBehaviour
     Vector2 direction;
     SetNomeJogador s;
     SetFaseScript f;
+    SetDanoScript d;
+    SetBauScript b;
     int fase, prox = 0, acabou = 0;
     float time = 0;
 
@@ -24,6 +26,8 @@ public class MovementPlayerJogo : MonoBehaviour
     {
         s = FindObjectOfType<SetNomeJogador>();
         f = FindObjectOfType<SetFaseScript>();
+        d = FindObjectOfType<SetDanoScript>();
+        b = FindObjectOfType<SetBauScript>();
         fase = f.GetFase();
         if(fase == 1)
         {
@@ -134,6 +138,8 @@ public class MovementPlayerJogo : MonoBehaviour
     void VoltarMenu()
     {
         f.Reinicio();
+        b.ResetBau();
+        d.SetDano(10);
         StartCoroutine(Menu());
     }
 
