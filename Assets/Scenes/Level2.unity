@@ -1118,6 +1118,8 @@ GameObject:
   - component: {fileID: 518794663}
   - component: {fileID: 518794664}
   - component: {fileID: 518794665}
+  - component: {fileID: 518794667}
+  - component: {fileID: 518794666}
   m_Layer: 0
   m_Name: SCENE
   m_TagString: Untagged
@@ -1172,6 +1174,37 @@ MonoBehaviour:
   dano: []
   d:
     dano: 0
+--- !u!114 &518794666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518794662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446766fefa2fadc44a25e389cf294492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baus: []
+  bau:
+    indice: 0
+    aberto: 0
+--- !u!114 &518794667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518794662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1926d3a64d1f81647b7ea9d3511a9d87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fase: []
+  f:
+    fase: 0
 --- !u!1 &527074828
 GameObject:
   m_ObjectHideFlags: 0

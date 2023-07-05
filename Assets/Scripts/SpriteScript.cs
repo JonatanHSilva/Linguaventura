@@ -10,7 +10,7 @@ public class SpriteScript : MonoBehaviour
     bool playerInRange = false;
     public GameObject panel;
     public Text text;
-    public Button button;
+    public Button button, nao;
     PopUpMessage pop1;
     SetFaseScript s;
     int fase;
@@ -29,7 +29,8 @@ public class SpriteScript : MonoBehaviour
         {
             text.text = "Deseja jogar a fase 2?";
             button.onClick.AddListener(Fase2);
-        }else if(fase == 3)
+        }
+        else if(fase == 3)
         {
             text.text = "Deseja jogar a fase 3?";
             button.onClick.AddListener(Fase3);
@@ -50,7 +51,7 @@ public class SpriteScript : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         playerInRange = false;
-        pop1.ClosePopUp();
+        if(!pop1.Pop()) pop1.ClosePopUp();
         vez = 0;
     }
 
