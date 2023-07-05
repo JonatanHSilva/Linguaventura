@@ -10,6 +10,7 @@ public class PopUpMessage : MonoBehaviour
 
     public void PopUp()
     {
+        animator.ResetTrigger("close");
         animator.SetTrigger("pop");
         set = 0;
     }
